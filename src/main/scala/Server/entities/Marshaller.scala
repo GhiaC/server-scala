@@ -15,6 +15,8 @@ object Marshaller {
   implicit val addProviderResponse = jsonFormat2(AddProviderResponse)
   implicit val addUserResponse = jsonFormat2(AddUserResponse)
 
+  implicit val loginRequest = jsonFormat2(LoginRequest)
+
   implicit val searchByName = jsonFormat1(SearchByNameRequest)
 
   implicit val searchByLocation = jsonFormat2(SearchByLocationRequest)

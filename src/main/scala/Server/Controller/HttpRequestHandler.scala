@@ -1,6 +1,7 @@
 package Server.Controller
 
 import Server.Models._
+import Server.entities
 import Server.entities._
 import akka.actor.Actor
 import akka.pattern._
@@ -19,12 +20,18 @@ class HttpRequestHandler extends Actor {
     case r: GetServiceProvider => getServiceProvider(r) pipeTo sender()
     case r: SearchByLocationRequest => searchByLocation(r) pipeTo sender()
     case r: SearchByNameRequest => searchByName(r) pipeTo sender()
+    case r: LoginRequest => login(r) pipeTo sender()
     case GetServices => getServices pipeTo sender()
   }
 
   def searchByLocation(req: SearchByLocationRequest) = for (result <- hdbExt.run(ProviderRepo.searchByLocation(req.lat, req.long))) yield if (result.nonEmpty) Option(SearchByLocationResponse(result)) else None
 
   def searchByName(req: SearchByNameRequest) = for (result <- hdbExt.run(ProviderRepo.searchByName(req.name))) yield if (result.nonEmpty) Option(SearchByNameResponse(result)) else None
+
+  def login(req: LoginRequest) = for {
+    isExist <- hdbExt.run(UserRepo.login(req.username, req.password))
+    result <- if (isExist.nonEmpty) Future(Some(LoginResponse(result = true, Some(UserInfo(isExist.head, req.username))))) else Future(Some(LoginResponse(result = false, None)))
+  } yield result
 
   def addService(addServiceRequest: AddServiceRequest) =
     for {

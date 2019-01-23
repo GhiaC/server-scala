@@ -1,6 +1,6 @@
 package Server.entities
 
-import Server.Models.{ProviderModel, ServiceModel}
+import Server.Models.{ProviderModel, ServiceModel, UserInfo, UserModel}
 
 trait Response
 
@@ -15,6 +15,8 @@ case class AddProviderResponse(result: Boolean, id: Int) extends SuccessResponse
 case class AddServiceResponse(result: Boolean, id: Int) extends SuccessResponse
 
 case class AddUserResponse(result: Boolean, id: Int) extends SuccessResponse
+
+case class LoginResponse(result: Boolean, user: Option[UserInfo]) extends SuccessResponse
 
 case class GetServicesResponse(list: Seq[ServiceModel]) extends SuccessResponse
 

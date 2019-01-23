@@ -1,13 +1,14 @@
 package Server.Models
 
 import Server.ServerHelper
-import slick.ast.ColumnOption.Unique
 import slick.jdbc.MySQLProfile
 import slick.jdbc.MySQLProfile.api._
 
 import scala.concurrent.{ExecutionContextExecutor, Future}
 
 final case class UserModel(id: Int, username: String, password: String, created_at: String, deleted_at: Option[String] = None)
+
+final case class UserInfo(id: Int, username: String)
 
 class User(tag: Tag) extends
   Table[UserModel](tag, "USERS") {
@@ -30,6 +31,8 @@ object UserRepo {
   def create(u: UserModel) = users += u
 
   def exists(id: Int) = users.filter(_.id === id).exists.result
+
+  def login(username: String, password: String) = users.filter(user => user.username === username && user.password === password).map(_.id).result
 
   def exists(username: String) = users.filter(_.username === username).exists.result
 

@@ -9,12 +9,13 @@ final case class AddServiceRequest(title: String, picture: String) extends Reque
 
 final case class AddUserRequest(username: String, password: String) extends Request
 
+final case class LoginRequest(username: String, password: String) extends Request
+
 final case class SearchByNameRequest(name: String) extends Request
 
 final case class SearchByLocationRequest(lat: String, long: String) extends Request
 
 object GetServices extends Request
-
 
 final case class GetServiceProviders(serviceId: Int) extends Request
 

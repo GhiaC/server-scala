@@ -57,8 +57,9 @@ case class HttpRoute()(implicit val system: ActorSystem) extends Directives with
         ((put | post) & entity(as[AddProviderRequest])) (request => handleRequest(request)) ~
         ((put | post) & entity(as[SearchByNameRequest])) (request => handleRequest(request)) ~
         ((put | post) & entity(as[SearchByLocationRequest])) (request => handleRequest(request)) ~
-        ((put | post) & entity(as[AddUserRequest])) (request => handleRequest(request)) ~
-        ((put | post) & entity(as[AddServiceRequest])) (request => handleRequest(request))
+        ((put | post) & entity(as[AddServiceRequest])) (request => handleRequest(request)) ~
+        ((put | post) & path("register")) (entity(as[AddUserRequest])(handleRequest(_))) ~
+        ((put | post) & path("login")) (entity(as[LoginRequest])(handleRequest(_)))
     }
 
 
