@@ -65,6 +65,8 @@ object ProviderRepo {
 
   def exists(id: Int) = providers.filter(_.id === id).exists.result
 
+  def exists(title: String) = providers.filter(_.title === title).exists.result
+
   def getUniqueId(implicit hdb: MySQLProfile.backend.Database, ex: ExecutionContextExecutor): Future[Int] = {
     val id = getRandomInt
     hdb.run(ProviderRepo exists id) flatMap { i =>

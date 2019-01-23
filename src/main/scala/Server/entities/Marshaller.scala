@@ -1,20 +1,25 @@
 package Server.entities
 
 import spray.json.DefaultJsonProtocol._
-import spray.json.RootJsonFormat
-
 
 object Marshaller {
 
-  implicit val getServiceProvider: RootJsonFormat[GetServiceProvider] = jsonFormat1(GetServiceProvider)
-  implicit val getServiceProviders: RootJsonFormat[GetServiceProviders] = jsonFormat1(GetServiceProviders)
+  implicit val getServiceProvider = jsonFormat1(GetServiceProvider)
+  implicit val getServiceProviders = jsonFormat1(GetServiceProviders)
 
-  implicit val addService: RootJsonFormat[AddServiceRequest] = jsonFormat2(AddServiceRequest)
-  implicit val addServiceResponse: RootJsonFormat[AddServiceResponse] = jsonFormat1(AddServiceResponse)
+  implicit val addService = jsonFormat2(AddServiceRequest)
+  implicit val addServiceResponse = jsonFormat2(AddServiceResponse)
 
-  implicit val addProvider: RootJsonFormat[AddProviderRequest] = jsonFormat10(AddProviderRequest)
-  implicit val addProviderResponse: RootJsonFormat[AddProviderResponse] = jsonFormat1(AddProviderResponse)
+  implicit val addProvider = jsonFormat10(AddProviderRequest)
+  implicit val addUser = jsonFormat2(AddUserRequest)
+  implicit val addProviderResponse = jsonFormat2(AddProviderResponse)
+  implicit val addUserResponse = jsonFormat2(AddUserResponse)
 
-  implicit val resultResponse: RootJsonFormat[ResultResponse] = jsonFormat1(ResultResponse)
+  implicit val searchByName = jsonFormat1(SearchByNameRequest)
+
+  implicit val searchByLocation = jsonFormat2(SearchByLocationRequest)
+
+
+  implicit val resultResponse = jsonFormat1(ResultResponse)
 
 }

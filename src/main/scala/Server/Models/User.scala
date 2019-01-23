@@ -1,6 +1,7 @@
 package Server.Models
 
 import Server.ServerHelper
+import slick.ast.ColumnOption.Unique
 import slick.jdbc.MySQLProfile
 import slick.jdbc.MySQLProfile.api._
 
@@ -29,6 +30,8 @@ object UserRepo {
   def create(u: UserModel) = users += u
 
   def exists(id: Int) = users.filter(_.id === id).exists.result
+
+  def exists(username: String) = users.filter(_.username === username).exists.result
 
   def find(id: Int) = users.filter(_.id === id).result
 

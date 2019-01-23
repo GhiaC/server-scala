@@ -34,6 +34,8 @@ object ServicesRepo {
 
   def exists(id: Int) = services.filter(_.id === id).exists.result
 
+  def exists(title: String) = services.filter(_.title === title).exists.result
+
   def schema = services.schema
 
   def getRandomInt: Int = scala.util.Random.nextInt(1000)

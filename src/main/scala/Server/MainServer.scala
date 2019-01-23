@@ -14,26 +14,6 @@ import slick.jdbc.MySQLProfile.api._
 import scala.concurrent.ExecutionContextExecutor
 import scala.io.StdIn
 
-class Coffees(tag: Tag) extends Table[(String, Int, Double, Int, Int)](tag, "COFFEES") {
-  def name = column[String]("COF_NAME", O.PrimaryKey)
-
-  def supID = column[Int]("SUP_ID")
-
-  def price = column[Double]("PRICE")
-
-  def sales = column[Int]("SALES", O.Default(0))
-
-  def total = column[Int]("TOTAL", O.Default(0))
-
-  def * = (name, supID, price, sales, total)
-}
-
-object CoffeesRepo {
-  private val coffees = TableQuery[Coffees]
-
-  def schema = coffees.schema
-
-}
 
 object WebServer {
 
@@ -48,10 +28,9 @@ object WebServer {
 
     val conf: Config = ConfigFactory.load()
 
-//    val create = (ProviderRepo.schema).create
-//    hdbExt.run(create)
-
     implicit val timeout: Timeout = Timeout(5, TimeUnit.SECONDS)
+
+    hdbExt.run(UserRepo.schema.create)
 
     val bindingFuture = Http().bindAndHandle(HttpRoute().route, conf.getString("bind-interface"), conf.getInt("bind-port"))
     log.info(s"Server online at http://" + conf.getString("bind-interface") + ":" + conf.getString("bind-port") + "/\nPress RETURN to stop...")

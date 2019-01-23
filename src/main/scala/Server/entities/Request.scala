@@ -15,6 +15,7 @@ final case class SearchByLocationRequest(lat: String, long: String) extends Requ
 
 object GetServices extends Request
 
+
 final case class GetServiceProviders(serviceId: Int) extends Request
 
 final case class GetServiceProvider(serviceProviderId: Int) extends Request
