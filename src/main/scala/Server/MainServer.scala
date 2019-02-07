@@ -1,19 +1,14 @@
-import java.util.concurrent.TimeUnit
+package Server
 
 import Server.Controller.DBExtension
-import Server.HttpRoute
 import Server.Models._
 import akka.actor.ActorSystem
 import akka.event.Logging
-import akka.http.scaladsl.Http
 import akka.stream.ActorMaterializer
-import akka.util.Timeout
 import com.typesafe.config.{Config, ConfigFactory}
 import slick.jdbc.MySQLProfile.api._
-
 import scala.concurrent.ExecutionContextExecutor
 import scala.io.StdIn
-
 
 object WebServer {
 
@@ -28,11 +23,10 @@ object WebServer {
 
     val conf: Config = ConfigFactory.load()
 
-    implicit val timeout: Timeout = Timeout(5, TimeUnit.SECONDS)
-
     hdbExt.run(UserRepo.schema.create)
 
-    val bindingFuture = Http().bindAndHandle(HttpRoute().route, conf.getString("bind-interface"), conf.getInt("bind-port"))
+    val bindingFuture = HttpRoute().start()
+
     log.info(s"Server online at http://" + conf.getString("bind-interface") + ":" + conf.getString("bind-port") + "/\nPress RETURN to stop...")
     StdIn.readLine() // let it run until user presses return
     bindingFuture

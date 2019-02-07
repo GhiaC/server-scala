@@ -6,7 +6,8 @@ import slick.jdbc.MySQLProfile.api._
 
 import scala.concurrent.{ExecutionContextExecutor, Future}
 
-final case class UserModel(id: Int, username: String, password: String, created_at: String, deleted_at: Option[String] = None)
+final case class UserModel(id: Int, username: String, password: String
+                           , created_at: String, deleted_at: Option[String] = None)
 
 final case class UserInfo(id: Int, username: String)
 
@@ -18,6 +19,20 @@ class User(tag: Tag) extends
 
   def password = column[String]("PASSWORD")
 
+  def name = column[String]("NAME")
+
+  def phonenumber = column[String]("PHONENUMBER")
+
+  def city = column[String]("CITY")
+
+  def address = column[String]("ADDRESS")
+
+  def lat = column[String]("LAT")
+
+  def long = column[String]("LONG")
+
+  def token = column[String]("TOKEN")
+
   def created_at = column[String]("CREATED_AT")
 
   def deleted_at = column[Option[String]]("DELETED_AT", O.Default(None))
@@ -25,31 +40,22 @@ class User(tag: Tag) extends
   def * = (id, username, password, created_at, deleted_at) <> (UserModel.tupled, UserModel.unapply)
 }
 
-object UserRepo {
-  private val users = TableQuery[User]
+object UserRepo extends RepoHelper {
+  override type T = User
+  override type TModel = UserModel
 
-  def create(u: UserModel) = users += u
+  override def schema = instance.schema
 
-  def exists(id: Int) = users.filter(_.id === id).exists.result
+  override def create(u: TModel) = instance += u
 
-  def login(username: String, password: String) = users.filter(user => user.username === username && user.password === password).map(_.id).result
+  override def exists(id: Int) = instance.filter(_.id === id).exists.result
 
-  def exists(username: String) = users.filter(_.username === username).exists.result
+  override def get(id: Int) = instance.filter(_.id === id).result
 
-  def find(id: Int) = users.filter(_.id === id).result
+  def login(username: String, password: String) = instance.filter(user => user.username === username && user.password === password).map(_.id).result
 
-  def delete(id: Int) = users.filter(_.id === id).map(_.deleted_at).update(Some(ServerHelper.getCurrentTimeStamp))
+  def exists(username: String) = instance.filter(_.username === username).exists.result
 
-  def getAll = users.result
+  def getAll = instance.result
 
-  def schema = users.schema
-
-  def getRandomInt: Int = scala.util.Random.nextInt(1000)
-
-  def getUniqueId(implicit hdb: MySQLProfile.backend.Database, ex: ExecutionContextExecutor): Future[Int] = {
-    val id = getRandomInt
-    hdb.run(UserRepo exists id) flatMap { i =>
-      if (i) getUniqueId else Future(id)
-    }
-  }
 }
