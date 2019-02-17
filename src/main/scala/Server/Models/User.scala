@@ -40,9 +40,20 @@ class User(tag: Tag) extends
   def * = (id, username, password, created_at, deleted_at) <> (UserModel.tupled, UserModel.unapply)
 }
 
+
 object UserRepo extends RepoHelper {
   override type T = User
   override type TModel = UserModel
+
+  val instance = TableQuery[T]
+
+  def getUniqueId(implicit hdb: MySQLProfile.backend.Database, ex: ExecutionContextExecutor): Future[Int] = {
+
+    val id = getRandomInt
+    hdb.run(this exists id) flatMap { i =>
+      if (i) getUniqueId else Future(id)
+    }
+  }
 
   override def schema = instance.schema
 
@@ -52,7 +63,12 @@ object UserRepo extends RepoHelper {
 
   override def get(id: Int) = instance.filter(_.id === id).result
 
-  def login(username: String, password: String) = instance.filter(user => user.username === username && user.password === password).map(_.id).result
+  def login(username: String, password: String) =
+    instance.filter(user => user.username === username && user.password === password).map(_.id).result
+
+  def retoken(username: String, password: String) =
+    instance.filter(user => user.username === username
+      && user.password === password).map(user => (user.token)).update(scala.util.Random.alphanumeric.take(50).mkString)
 
   def exists(username: String) = instance.filter(_.username === username).exists.result
 

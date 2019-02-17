@@ -36,7 +36,7 @@ object OrderRepo extends RepoHelper {
   override type T = Order
   override type TModel = OrderModel
 
-  override protected val instance = TableQuery[T]
+  val instance = TableQuery[T]
 
   override def schema = instance.schema
 
