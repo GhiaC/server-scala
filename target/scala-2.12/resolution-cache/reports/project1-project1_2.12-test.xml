@@ -1,0 +1,804 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="ivy-report.xsl"?>
+<ivy-report version="1.0">
+	<info
+		organisation="project1"
+		module="project1_2.12"
+		revision="0.1"
+		conf="test"
+		confs="compile, runtime, test, provided, optional, compile-internal, runtime-internal, test-internal, plugin, pom, scala-tool"
+		date="20190220151915"/>
+	<dependencies>
+		<module organisation="ch.megard" name="akka-http-cors_2.12">
+			<revision name="0.3.4" status="release" pubdate="20190118012549" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/lomigmegard/akka-http-cors" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="50">
+				<license name="Apache 2" url="https://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="3386" time="0" location="/home/masoud/.ivy2/cache/ch.megard/akka-http-cors_2.12/ivy-0.3.4.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/ch/megard/akka-http-cors_2.12/0.3.4/akka-http-cors_2.12-0.3.4.pom"/>
+				<caller organisation="project1" name="project1_2.12" conf="test, compile, runtime" rev="0.3.4" rev-constraint-default="0.3.4" rev-constraint-dynamic="0.3.4" callerrev="0.1"/>
+				<artifacts>
+					<artifact name="akka-http-cors_2.12" type="jar" ext="jar" status="no" details="" size="79009" time="0" location="/home/masoud/.ivy2/cache/ch.megard/akka-http-cors_2.12/jars/akka-http-cors_2.12-0.3.4.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/ch/megard/akka-http-cors_2.12/0.3.4/akka-http-cors_2.12-0.3.4.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="io.circe" name="circe-literal_2.12">
+			<revision name="0.10.0" status="release" pubdate="20190129191715" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/circe/circe" extra-info.apiURL="https://circe.github.io/circe/api/" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="49">
+				<license name="Apache 2.0" url="http://www.apache.org/licenses/LICENSE-2.0"/>
+				<metadata-artifact status="no" details="" size="3245" time="0" location="/home/masoud/.ivy2/cache/io.circe/circe-literal_2.12/ivy-0.10.0.xml" searched="false" origin-is-local="false" origin-location="https://artifactory.bale.ai:3443/artifactory/bale-mvn-remote-repo/io/circe/circe-literal_2.12/0.10.0/circe-literal_2.12-0.10.0.pom"/>
+				<caller organisation="project1" name="project1_2.12" conf="test, compile, runtime" rev="0.10.0" rev-constraint-default="0.10.0" rev-constraint-dynamic="0.10.0" callerrev="0.1"/>
+				<artifacts>
+					<artifact name="circe-literal_2.12" type="jar" ext="jar" status="no" details="" size="45762" time="0" location="/home/masoud/.ivy2/cache/io.circe/circe-literal_2.12/jars/circe-literal_2.12-0.10.0.jar">
+						<origin-location is-local="false" location="https://artifactory.bale.ai:3443/artifactory/bale-mvn-remote-repo/io/circe/circe-literal_2.12/0.10.0/circe-literal_2.12-0.10.0.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="io.circe" name="circe-parser_2.12">
+			<revision name="0.10.0" status="release" pubdate="20190129191719" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/circe/circe" extra-info.apiURL="https://circe.github.io/circe/api/" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="46">
+				<license name="Apache 2.0" url="http://www.apache.org/licenses/LICENSE-2.0"/>
+				<metadata-artifact status="no" details="" size="3082" time="0" location="/home/masoud/.ivy2/cache/io.circe/circe-parser_2.12/ivy-0.10.0.xml" searched="false" origin-is-local="false" origin-location="https://artifactory.bale.ai:3443/artifactory/bale-mvn-remote-repo/io/circe/circe-parser_2.12/0.10.0/circe-parser_2.12-0.10.0.pom"/>
+				<caller organisation="project1" name="project1_2.12" conf="test, compile, runtime" rev="0.10.0" rev-constraint-default="0.10.0" rev-constraint-dynamic="0.10.0" callerrev="0.1"/>
+				<artifacts>
+					<artifact name="circe-parser_2.12" type="jar" ext="jar" status="no" details="" size="2750" time="0" location="/home/masoud/.ivy2/cache/io.circe/circe-parser_2.12/jars/circe-parser_2.12-0.10.0.jar">
+						<origin-location is-local="false" location="https://artifactory.bale.ai:3443/artifactory/bale-mvn-remote-repo/io/circe/circe-parser_2.12/0.10.0/circe-parser_2.12-0.10.0.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="io.circe" name="circe-jawn_2.12">
+			<revision name="0.10.0" status="release" pubdate="20190129191724" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/circe/circe" extra-info.apiURL="https://circe.github.io/circe/api/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="47">
+				<license name="Apache 2.0" url="http://www.apache.org/licenses/LICENSE-2.0"/>
+				<metadata-artifact status="no" details="" size="3083" time="0" location="/home/masoud/.ivy2/cache/io.circe/circe-jawn_2.12/ivy-0.10.0.xml" searched="false" origin-is-local="false" origin-location="https://artifactory.bale.ai:3443/artifactory/bale-mvn-remote-repo/io/circe/circe-jawn_2.12/0.10.0/circe-jawn_2.12-0.10.0.pom"/>
+				<caller organisation="io.circe" name="circe-parser_2.12" conf="default, compile, runtime, master" rev="0.10.0" rev-constraint-default="0.10.0" rev-constraint-dynamic="0.10.0" callerrev="0.10.0"/>
+				<artifacts>
+					<artifact name="circe-jawn_2.12" type="jar" ext="jar" status="no" details="" size="12620" time="0" location="/home/masoud/.ivy2/cache/io.circe/circe-jawn_2.12/jars/circe-jawn_2.12-0.10.0.jar">
+						<origin-location is-local="false" location="https://artifactory.bale.ai:3443/artifactory/bale-mvn-remote-repo/io/circe/circe-jawn_2.12/0.10.0/circe-jawn_2.12-0.10.0.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.spire-math" name="jawn-parser_2.12">
+			<revision name="0.13.0" status="release" pubdate="20190129191728" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://github.com/non/jawn" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="48">
+				<license name="MIT" url="http://opensource.org/licenses/MIT"/>
+				<metadata-artifact status="no" details="" size="2879" time="0" location="/home/masoud/.ivy2/cache/org.spire-math/jawn-parser_2.12/ivy-0.13.0.xml" searched="false" origin-is-local="false" origin-location="https://artifactory.bale.ai:3443/artifactory/bale-mvn-remote-repo/org/spire-math/jawn-parser_2.12/0.13.0/jawn-parser_2.12-0.13.0.pom"/>
+				<caller organisation="io.circe" name="circe-jawn_2.12" conf="compile, runtime" rev="0.13.0" rev-constraint-default="0.13.0" rev-constraint-dynamic="0.13.0" callerrev="0.10.0"/>
+				<artifacts>
+					<artifact name="jawn-parser_2.12" type="jar" ext="jar" status="no" details="" size="80255" time="0" location="/home/masoud/.ivy2/cache/org.spire-math/jawn-parser_2.12/jars/jawn-parser_2.12-0.13.0.jar">
+						<origin-location is-local="false" location="https://artifactory.bale.ai:3443/artifactory/bale-mvn-remote-repo/org/spire-math/jawn-parser_2.12/0.13.0/jawn-parser_2.12-0.13.0.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="io.circe" name="circe-generic-extras_2.12">
+			<revision name="0.10.0" status="release" pubdate="20190129191711" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/circe/circe" extra-info.apiURL="https://circe.github.io/circe/api/" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="45">
+				<license name="Apache 2.0" url="http://www.apache.org/licenses/LICENSE-2.0"/>
+				<metadata-artifact status="no" details="" size="3269" time="0" location="/home/masoud/.ivy2/cache/io.circe/circe-generic-extras_2.12/ivy-0.10.0.xml" searched="false" origin-is-local="false" origin-location="https://artifactory.bale.ai:3443/artifactory/bale-mvn-remote-repo/io/circe/circe-generic-extras_2.12/0.10.0/circe-generic-extras_2.12-0.10.0.pom"/>
+				<caller organisation="project1" name="project1_2.12" conf="test, compile, runtime" rev="0.10.0" rev-constraint-default="0.10.0" rev-constraint-dynamic="0.10.0" callerrev="0.1"/>
+				<artifacts>
+					<artifact name="circe-generic-extras_2.12" type="jar" ext="jar" status="no" details="" size="113953" time="0" location="/home/masoud/.ivy2/cache/io.circe/circe-generic-extras_2.12/jars/circe-generic-extras_2.12-0.10.0.jar">
+						<origin-location is-local="false" location="https://artifactory.bale.ai:3443/artifactory/bale-mvn-remote-repo/io/circe/circe-generic-extras_2.12/0.10.0/circe-generic-extras_2.12-0.10.0.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="io.circe" name="circe-generic_2.12">
+			<revision name="0.10.0" status="release" pubdate="20190129191659" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/circe/circe" extra-info.apiURL="https://circe.github.io/circe/api/" downloaded="false" searched="false" default="false" conf="default, compile, runtime(*), master(compile), runtime, default(compile), compile(*), master" position="42">
+				<license name="Apache 2.0" url="http://www.apache.org/licenses/LICENSE-2.0"/>
+				<metadata-artifact status="no" details="" size="3389" time="0" location="/home/masoud/.ivy2/cache/io.circe/circe-generic_2.12/ivy-0.10.0.xml" searched="false" origin-is-local="false" origin-location="https://artifactory.bale.ai:3443/artifactory/bale-mvn-remote-repo/io/circe/circe-generic_2.12/0.10.0/circe-generic_2.12-0.10.0.pom"/>
+				<caller organisation="io.circe" name="circe-generic-extras_2.12" conf="default, compile, runtime, master" rev="0.10.0" rev-constraint-default="0.10.0" rev-constraint-dynamic="0.10.0" callerrev="0.10.0"/>
+				<caller organisation="project1" name="project1_2.12" conf="test, compile, runtime" rev="0.10.0" rev-constraint-default="0.10.0" rev-constraint-dynamic="0.10.0" callerrev="0.1"/>
+				<artifacts>
+					<artifact name="circe-generic_2.12" type="jar" ext="jar" status="no" details="" size="153646" time="0" location="/home/masoud/.ivy2/cache/io.circe/circe-generic_2.12/jars/circe-generic_2.12-0.10.0.jar">
+						<origin-location is-local="false" location="https://artifactory.bale.ai:3443/artifactory/bale-mvn-remote-repo/io/circe/circe-generic_2.12/0.10.0/circe-generic_2.12-0.10.0.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.chuusai" name="shapeless_2.12">
+			<revision name="2.3.3" status="release" pubdate="20190129191706" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/milessabin/shapeless" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="43">
+				<license name="Apache 2" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="3230" time="0" location="/home/masoud/.ivy2/cache/com.chuusai/shapeless_2.12/ivy-2.3.3.xml" searched="false" origin-is-local="false" origin-location="https://artifactory.bale.ai:3443/artifactory/bale-mvn-remote-repo/com/chuusai/shapeless_2.12/2.3.3/shapeless_2.12-2.3.3.pom"/>
+				<caller organisation="io.circe" name="circe-generic_2.12" conf="default, compile, runtime, master" rev="2.3.3" rev-constraint-default="2.3.3" rev-constraint-dynamic="2.3.3" callerrev="0.10.0"/>
+				<artifacts>
+					<artifact name="shapeless_2.12" type="bundle" ext="jar" status="no" details="" size="3243337" time="0" location="/home/masoud/.ivy2/cache/com.chuusai/shapeless_2.12/bundles/shapeless_2.12-2.3.3.jar">
+						<origin-location is-local="false" location="https://artifactory.bale.ai:3443/artifactory/bale-mvn-remote-repo/com/chuusai/shapeless_2.12/2.3.3/shapeless_2.12-2.3.3.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.typelevel" name="macro-compat_2.12">
+			<revision name="1.1.1" status="release" pubdate="20190129184034" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/milessabin/macro-compat" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="44">
+				<license name="Apache 2" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="2964" time="0" location="/home/masoud/.ivy2/cache/org.typelevel/macro-compat_2.12/ivy-1.1.1.xml" searched="false" origin-is-local="false" origin-location="https://artifactory.bale.ai:3443/artifactory/bale-mvn-remote-repo/org/typelevel/macro-compat_2.12/1.1.1/macro-compat_2.12-1.1.1.pom"/>
+				<caller organisation="com.chuusai" name="shapeless_2.12" conf="compile, runtime" rev="1.1.1" rev-constraint-default="1.1.1" rev-constraint-dynamic="1.1.1" callerrev="2.3.3"/>
+				<artifacts>
+					<artifact name="macro-compat_2.12" type="jar" ext="jar" status="no" details="" size="3180" time="0" location="/home/masoud/.ivy2/cache/org.typelevel/macro-compat_2.12/jars/macro-compat_2.12-1.1.1.jar">
+						<origin-location is-local="false" location="https://artifactory.bale.ai:3443/artifactory/bale-mvn-remote-repo/org/typelevel/macro-compat_2.12/1.1.1/macro-compat_2.12-1.1.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="io.circe" name="circe-core_2.12">
+			<revision name="0.10.0" status="release" pubdate="20190129191626" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/circe/circe" extra-info.apiURL="https://circe.github.io/circe/api/" downloaded="false" searched="false" default="false" conf="default, compile, runtime(*), master(compile), runtime, default(compile), compile(*), master" position="36">
+				<license name="Apache 2.0" url="http://www.apache.org/licenses/LICENSE-2.0"/>
+				<metadata-artifact status="no" details="" size="3082" time="0" location="/home/masoud/.ivy2/cache/io.circe/circe-core_2.12/ivy-0.10.0.xml" searched="false" origin-is-local="false" origin-location="https://artifactory.bale.ai:3443/artifactory/bale-mvn-remote-repo/io/circe/circe-core_2.12/0.10.0/circe-core_2.12-0.10.0.pom"/>
+				<caller organisation="io.circe" name="circe-generic_2.12" conf="default, compile, runtime, master" rev="0.10.0" rev-constraint-default="0.10.0" rev-constraint-dynamic="0.10.0" callerrev="0.10.0"/>
+				<caller organisation="io.circe" name="circe-parser_2.12" conf="default, compile, runtime, master" rev="0.10.0" rev-constraint-default="0.10.0" rev-constraint-dynamic="0.10.0" callerrev="0.10.0"/>
+				<caller organisation="project1" name="project1_2.12" conf="test, compile, runtime" rev="0.10.0" rev-constraint-default="0.10.0" rev-constraint-dynamic="0.10.0" callerrev="0.1"/>
+				<caller organisation="io.circe" name="circe-literal_2.12" conf="default, compile, runtime, master" rev="0.10.0" rev-constraint-default="0.10.0" rev-constraint-dynamic="0.10.0" callerrev="0.10.0"/>
+				<caller organisation="io.circe" name="circe-jawn_2.12" conf="compile, runtime" rev="0.10.0" rev-constraint-default="0.10.0" rev-constraint-dynamic="0.10.0" callerrev="0.10.0"/>
+				<artifacts>
+					<artifact name="circe-core_2.12" type="jar" ext="jar" status="no" details="" size="938766" time="0" location="/home/masoud/.ivy2/cache/io.circe/circe-core_2.12/jars/circe-core_2.12-0.10.0.jar">
+						<origin-location is-local="false" location="https://artifactory.bale.ai:3443/artifactory/bale-mvn-remote-repo/io/circe/circe-core_2.12/0.10.0/circe-core_2.12-0.10.0.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.typelevel" name="cats-core_2.12">
+			<revision name="1.4.0" status="release" pubdate="20190129191640" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/typelevel/cats" extra-info.apiURL="http://typelevel.org/cats/api/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master, default, default(compile)" position="38">
+				<license name="MIT" url="http://opensource.org/licenses/MIT"/>
+				<metadata-artifact status="no" details="" size="3339" time="0" location="/home/masoud/.ivy2/cache/org.typelevel/cats-core_2.12/ivy-1.4.0.xml" searched="false" origin-is-local="false" origin-location="https://artifactory.bale.ai:3443/artifactory/bale-mvn-remote-repo/org/typelevel/cats-core_2.12/1.4.0/cats-core_2.12-1.4.0.pom"/>
+				<caller organisation="io.circe" name="circe-core_2.12" conf="default, compile, runtime, master" rev="1.4.0" rev-constraint-default="1.4.0" rev-constraint-dynamic="1.4.0" callerrev="0.10.0"/>
+				<caller organisation="project1" name="project1_2.12" conf="test, compile, runtime" rev="1.1.0" rev-constraint-default="1.1.0" rev-constraint-dynamic="1.1.0" callerrev="0.1"/>
+				<artifacts>
+					<artifact name="cats-core_2.12" type="jar" ext="jar" status="no" details="" size="4413894" time="0" location="/home/masoud/.ivy2/cache/org.typelevel/cats-core_2.12/jars/cats-core_2.12-1.4.0.jar">
+						<origin-location is-local="false" location="https://artifactory.bale.ai:3443/artifactory/bale-mvn-remote-repo/org/typelevel/cats-core_2.12/1.4.0/cats-core_2.12-1.4.0.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+			<revision name="1.1.0" status="release" pubdate="20190129190523" resolver="sbt-chain" artresolver="sbt-chain" evicted="latest-revision" evicted-reason="" homepage="https://github.com/typelevel/cats" extra-info.apiURL="http://typelevel.org/cats/api/" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="-1">
+				<license name="MIT" url="http://opensource.org/licenses/MIT"/>
+				<metadata-artifact status="no" details="" size="3339" time="0" location="/home/masoud/.ivy2/cache/org.typelevel/cats-core_2.12/ivy-1.1.0.xml" searched="false" origin-is-local="false" origin-location="https://artifactory.bale.ai:3443/artifactory/bale-mvn-remote-repo/org/typelevel/cats-core_2.12/1.1.0/cats-core_2.12-1.1.0.pom"/>
+				<evicted-by rev="1.4.0"/>
+				<caller organisation="project1" name="project1_2.12" conf="test, compile, runtime" rev="1.1.0" rev-constraint-default="1.1.0" rev-constraint-dynamic="1.1.0" callerrev="0.1"/>
+				<artifacts>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.typelevel" name="cats-kernel_2.12">
+			<revision name="1.4.0" status="release" pubdate="20190129191655" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/typelevel/cats" extra-info.apiURL="http://typelevel.org/cats/api/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="41">
+				<license name="MIT" url="http://opensource.org/licenses/MIT"/>
+				<metadata-artifact status="no" details="" size="2777" time="0" location="/home/masoud/.ivy2/cache/org.typelevel/cats-kernel_2.12/ivy-1.4.0.xml" searched="false" origin-is-local="false" origin-location="https://artifactory.bale.ai:3443/artifactory/bale-mvn-remote-repo/org/typelevel/cats-kernel_2.12/1.4.0/cats-kernel_2.12-1.4.0.pom"/>
+				<caller organisation="org.typelevel" name="cats-core_2.12" conf="default, compile, runtime, master" rev="1.1.0" rev-constraint-default="1.1.0" rev-constraint-dynamic="1.1.0" callerrev="1.1.0"/>
+				<caller organisation="org.typelevel" name="cats-core_2.12" conf="compile, runtime" rev="1.4.0" rev-constraint-default="1.4.0" rev-constraint-dynamic="1.4.0" callerrev="1.4.0"/>
+				<artifacts>
+					<artifact name="cats-kernel_2.12" type="jar" ext="jar" status="no" details="" size="3206314" time="0" location="/home/masoud/.ivy2/cache/org.typelevel/cats-kernel_2.12/jars/cats-kernel_2.12-1.4.0.jar">
+						<origin-location is-local="false" location="https://artifactory.bale.ai:3443/artifactory/bale-mvn-remote-repo/org/typelevel/cats-kernel_2.12/1.4.0/cats-kernel_2.12-1.4.0.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+			<revision name="1.1.0" status="release" pubdate="20190129190532" resolver="sbt-chain" artresolver="sbt-chain" evicted="latest-revision" evicted-reason="" homepage="https://github.com/typelevel/cats" extra-info.apiURL="http://typelevel.org/cats/api/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="-1">
+				<license name="MIT" url="http://opensource.org/licenses/MIT"/>
+				<metadata-artifact status="no" details="" size="2777" time="0" location="/home/masoud/.ivy2/cache/org.typelevel/cats-kernel_2.12/ivy-1.1.0.xml" searched="false" origin-is-local="false" origin-location="https://artifactory.bale.ai:3443/artifactory/bale-mvn-remote-repo/org/typelevel/cats-kernel_2.12/1.1.0/cats-kernel_2.12-1.1.0.pom"/>
+				<evicted-by rev="1.4.0"/>
+				<caller organisation="org.typelevel" name="cats-core_2.12" conf="default, compile, runtime, master" rev="1.1.0" rev-constraint-default="1.1.0" rev-constraint-dynamic="1.1.0" callerrev="1.1.0"/>
+				<artifacts>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.typelevel" name="cats-macros_2.12">
+			<revision name="1.4.0" status="release" pubdate="20190129191647" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/typelevel/cats" extra-info.apiURL="http://typelevel.org/cats/api/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="39">
+				<license name="MIT" url="http://opensource.org/licenses/MIT"/>
+				<metadata-artifact status="no" details="" size="2923" time="0" location="/home/masoud/.ivy2/cache/org.typelevel/cats-macros_2.12/ivy-1.4.0.xml" searched="false" origin-is-local="false" origin-location="https://artifactory.bale.ai:3443/artifactory/bale-mvn-remote-repo/org/typelevel/cats-macros_2.12/1.4.0/cats-macros_2.12-1.4.0.pom"/>
+				<caller organisation="org.typelevel" name="cats-core_2.12" conf="default, compile, runtime, master" rev="1.1.0" rev-constraint-default="1.1.0" rev-constraint-dynamic="1.1.0" callerrev="1.1.0"/>
+				<caller organisation="org.typelevel" name="cats-core_2.12" conf="compile, runtime" rev="1.4.0" rev-constraint-default="1.4.0" rev-constraint-dynamic="1.4.0" callerrev="1.4.0"/>
+				<artifacts>
+					<artifact name="cats-macros_2.12" type="jar" ext="jar" status="no" details="" size="6273" time="0" location="/home/masoud/.ivy2/cache/org.typelevel/cats-macros_2.12/jars/cats-macros_2.12-1.4.0.jar">
+						<origin-location is-local="false" location="https://artifactory.bale.ai:3443/artifactory/bale-mvn-remote-repo/org/typelevel/cats-macros_2.12/1.4.0/cats-macros_2.12-1.4.0.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+			<revision name="1.1.0" status="release" pubdate="20190129190527" resolver="sbt-chain" artresolver="sbt-chain" evicted="latest-revision" evicted-reason="" homepage="https://github.com/typelevel/cats" extra-info.apiURL="http://typelevel.org/cats/api/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="-1">
+				<license name="MIT" url="http://opensource.org/licenses/MIT"/>
+				<metadata-artifact status="no" details="" size="2923" time="0" location="/home/masoud/.ivy2/cache/org.typelevel/cats-macros_2.12/ivy-1.1.0.xml" searched="false" origin-is-local="false" origin-location="https://artifactory.bale.ai:3443/artifactory/bale-mvn-remote-repo/org/typelevel/cats-macros_2.12/1.1.0/cats-macros_2.12-1.1.0.pom"/>
+				<evicted-by rev="1.4.0"/>
+				<caller organisation="org.typelevel" name="cats-core_2.12" conf="default, compile, runtime, master" rev="1.1.0" rev-constraint-default="1.1.0" rev-constraint-dynamic="1.1.0" callerrev="1.1.0"/>
+				<artifacts>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.typelevel" name="machinist_2.12">
+			<revision name="0.6.5" status="release" pubdate="20190129191651" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://github.com/typelevel/machinist" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="40">
+				<license name="MIT" url="http://opensource.org/licenses/MIT"/>
+				<metadata-artifact status="no" details="" size="2785" time="0" location="/home/masoud/.ivy2/cache/org.typelevel/machinist_2.12/ivy-0.6.5.xml" searched="false" origin-is-local="false" origin-location="https://artifactory.bale.ai:3443/artifactory/bale-mvn-remote-repo/org/typelevel/machinist_2.12/0.6.5/machinist_2.12-0.6.5.pom"/>
+				<caller organisation="org.typelevel" name="cats-core_2.12" conf="default, compile, runtime, master" rev="0.6.2" rev-constraint-default="0.6.2" rev-constraint-dynamic="0.6.2" callerrev="1.1.0"/>
+				<caller organisation="org.typelevel" name="cats-macros_2.12" conf="compile, runtime" rev="0.6.2" rev-constraint-default="0.6.2" rev-constraint-dynamic="0.6.2" callerrev="1.1.0"/>
+				<caller organisation="org.typelevel" name="cats-core_2.12" conf="compile, runtime" rev="0.6.5" rev-constraint-default="0.6.5" rev-constraint-dynamic="0.6.5" callerrev="1.4.0"/>
+				<caller organisation="org.typelevel" name="cats-macros_2.12" conf="compile, runtime" rev="0.6.5" rev-constraint-default="0.6.5" rev-constraint-dynamic="0.6.5" callerrev="1.4.0"/>
+				<artifacts>
+					<artifact name="machinist_2.12" type="jar" ext="jar" status="no" details="" size="33783" time="0" location="/home/masoud/.ivy2/cache/org.typelevel/machinist_2.12/jars/machinist_2.12-0.6.5.jar">
+						<origin-location is-local="false" location="https://artifactory.bale.ai:3443/artifactory/bale-mvn-remote-repo/org/typelevel/machinist_2.12/0.6.5/machinist_2.12-0.6.5.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+			<revision name="0.6.2" status="release" pubdate="20190129134556" resolver="sbt-chain" artresolver="sbt-chain" evicted="latest-revision" evicted-reason="" homepage="http://github.com/typelevel/machinist" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="-1">
+				<license name="MIT" url="http://opensource.org/licenses/MIT"/>
+				<metadata-artifact status="no" details="" size="2785" time="0" location="/home/masoud/.ivy2/cache/org.typelevel/machinist_2.12/ivy-0.6.2.xml" searched="false" origin-is-local="false" origin-location="https://artifactory.bale.ai:3443/artifactory/bale-mvn-remote-repo/org/typelevel/machinist_2.12/0.6.2/machinist_2.12-0.6.2.pom"/>
+				<evicted-by rev="0.6.5"/>
+				<caller organisation="org.typelevel" name="cats-core_2.12" conf="default, compile, runtime, master" rev="0.6.2" rev-constraint-default="0.6.2" rev-constraint-dynamic="0.6.2" callerrev="1.1.0"/>
+				<caller organisation="org.typelevel" name="cats-macros_2.12" conf="compile, runtime" rev="0.6.2" rev-constraint-default="0.6.2" rev-constraint-dynamic="0.6.2" callerrev="1.1.0"/>
+				<artifacts>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="io.circe" name="circe-numbers_2.12">
+			<revision name="0.10.0" status="release" pubdate="20190129191636" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/circe/circe" extra-info.apiURL="https://circe.github.io/circe/api/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="37">
+				<license name="Apache 2.0" url="http://www.apache.org/licenses/LICENSE-2.0"/>
+				<metadata-artifact status="no" details="" size="2799" time="0" location="/home/masoud/.ivy2/cache/io.circe/circe-numbers_2.12/ivy-0.10.0.xml" searched="false" origin-is-local="false" origin-location="https://artifactory.bale.ai:3443/artifactory/bale-mvn-remote-repo/io/circe/circe-numbers_2.12/0.10.0/circe-numbers_2.12-0.10.0.pom"/>
+				<caller organisation="io.circe" name="circe-core_2.12" conf="default, compile, runtime, master" rev="0.10.0" rev-constraint-default="0.10.0" rev-constraint-dynamic="0.10.0" callerrev="0.10.0"/>
+				<artifacts>
+					<artifact name="circe-numbers_2.12" type="jar" ext="jar" status="no" details="" size="12756" time="0" location="/home/masoud/.ivy2/cache/io.circe/circe-numbers_2.12/jars/circe-numbers_2.12-0.10.0.jar">
+						<origin-location is-local="false" location="https://artifactory.bale.ai:3443/artifactory/bale-mvn-remote-repo/io/circe/circe-numbers_2.12/0.10.0/circe-numbers_2.12-0.10.0.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.postgresql" name="postgresql">
+			<revision name="9.3-1100-jdbc4" status="release" pubdate="20131101171347" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://jdbc.postgresql.org" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="35">
+				<license name="BSD License" url="http://jdbc.postgresql.org/license.html"/>
+				<metadata-artifact status="no" details="" size="2480" time="0" location="/home/masoud/.ivy2/cache/org.postgresql/postgresql/ivy-9.3-1100-jdbc4.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/postgresql/postgresql/9.3-1100-jdbc4/postgresql-9.3-1100-jdbc4.pom"/>
+				<caller organisation="project1" name="project1_2.12" conf="test, compile, runtime" rev="9.3-1100-jdbc4" rev-constraint-default="9.3-1100-jdbc4" rev-constraint-dynamic="9.3-1100-jdbc4" callerrev="0.1"/>
+				<artifacts>
+					<artifact name="postgresql" type="jar" ext="jar" status="no" details="" size="587152" time="0" location="/home/masoud/.ivy2/cache/org.postgresql/postgresql/jars/postgresql-9.3-1100-jdbc4.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/postgresql/postgresql/9.3-1100-jdbc4/postgresql-9.3-1100-jdbc4.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="mysql" name="mysql-connector-java">
+			<revision name="5.1.34" status="release" pubdate="20150508152545" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://dev.mysql.com/doc/connector-j/en/" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="34">
+				<license name="The GNU General Public License, Version 2" url="http://www.gnu.org/licenses/old-licenses/gpl-2.0.html"/>
+				<metadata-artifact status="no" details="" size="2538" time="0" location="/home/masoud/.ivy2/cache/mysql/mysql-connector-java/ivy-5.1.34.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/mysql/mysql-connector-java/5.1.34/mysql-connector-java-5.1.34.pom"/>
+				<caller organisation="project1" name="project1_2.12" conf="test, compile, runtime" rev="5.1.34" rev-constraint-default="5.1.34" rev-constraint-dynamic="5.1.34" callerrev="0.1"/>
+				<artifacts>
+					<artifact name="mysql-connector-java" type="jar" ext="jar" status="no" details="" size="960372" time="0" location="/home/masoud/.ivy2/cache/mysql/mysql-connector-java/jars/mysql-connector-java-5.1.34.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/mysql/mysql-connector-java/5.1.34/mysql-connector-java-5.1.34.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.typesafe.slick" name="slick-codegen_2.12">
+			<revision name="3.2.3" status="release" pubdate="20180323223959" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://slick.typesafe.com" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="33">
+				<license name="Two-clause BSD-style license" url="http://github.com/slick/slick/blob/master/LICENSE.txt"/>
+				<metadata-artifact status="no" details="" size="2888" time="0" location="/home/masoud/.ivy2/cache/com.typesafe.slick/slick-codegen_2.12/ivy-3.2.3.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/typesafe/slick/slick-codegen_2.12/3.2.3/slick-codegen_2.12-3.2.3.pom"/>
+				<caller organisation="project1" name="project1_2.12" conf="test, compile, runtime" rev="3.2.3" rev-constraint-default="3.2.3" rev-constraint-dynamic="3.2.3" callerrev="0.1"/>
+				<artifacts>
+					<artifact name="slick-codegen_2.12" type="jar" ext="jar" status="no" details="" size="115687" time="0" location="/home/masoud/.ivy2/cache/com.typesafe.slick/slick-codegen_2.12/jars/slick-codegen_2.12-3.2.3.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/typesafe/slick/slick-codegen_2.12/3.2.3/slick-codegen_2.12-3.2.3.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.typesafe.akka" name="akka-http-spray-json_2.12">
+			<revision name="10.1.7" status="release" pubdate="20190104134115" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://akka.io" extra-info.apiURL="http://doc.akka.io/api/akka-http/10.1.7/" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="31">
+				<license name="Apache-2.0" url="https://opensource.org/licenses/Apache-2.0"/>
+				<metadata-artifact status="no" details="" size="3399" time="0" location="/home/masoud/.ivy2/cache/com.typesafe.akka/akka-http-spray-json_2.12/ivy-10.1.7.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/typesafe/akka/akka-http-spray-json_2.12/10.1.7/akka-http-spray-json_2.12-10.1.7.pom"/>
+				<caller organisation="project1" name="project1_2.12" conf="test, compile, runtime" rev="10.1.7" rev-constraint-default="10.1.7" rev-constraint-dynamic="10.1.7" callerrev="0.1"/>
+				<artifacts>
+					<artifact name="akka-http-spray-json_2.12" type="jar" ext="jar" status="no" details="" size="16102" time="0" location="/home/masoud/.ivy2/cache/com.typesafe.akka/akka-http-spray-json_2.12/jars/akka-http-spray-json_2.12-10.1.7.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/typesafe/akka/akka-http-spray-json_2.12/10.1.7/akka-http-spray-json_2.12-10.1.7.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="io.spray" name="spray-json_2.12">
+			<revision name="1.3.4" status="release" pubdate="20171024102349" resolver="sbt-chain" artresolver="sbt-chain" evicted="latest-revision" evicted-reason="" homepage="https://github.com/spray/spray-json" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="-1">
+				<license name="Apache 2" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="3081" time="0" location="/home/masoud/.ivy2/cache/io.spray/spray-json_2.12/ivy-1.3.4.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/io/spray/spray-json_2.12/1.3.4/spray-json_2.12-1.3.4.pom"/>
+				<evicted-by rev="1.3.5"/>
+				<caller organisation="project1" name="project1_2.12" conf="test, compile, runtime" rev="1.3.4" rev-constraint-default="1.3.4" rev-constraint-dynamic="1.3.4" callerrev="0.1"/>
+				<artifacts>
+				</artifacts>
+			</revision>
+			<revision name="1.3.5" status="release" pubdate="20181108164646" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/spray/spray-json" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master, default, default(compile)" position="32">
+				<license name="Apache 2" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="3078" time="0" location="/home/masoud/.ivy2/cache/io.spray/spray-json_2.12/ivy-1.3.5.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/io/spray/spray-json_2.12/1.3.5/spray-json_2.12-1.3.5.pom"/>
+				<caller organisation="com.typesafe.akka" name="akka-http-spray-json_2.12" conf="default, compile, runtime, master" rev="1.3.5" rev-constraint-default="1.3.5" rev-constraint-dynamic="1.3.5" callerrev="10.1.7"/>
+				<caller organisation="project1" name="project1_2.12" conf="test, compile, runtime" rev="1.3.4" rev-constraint-default="1.3.4" rev-constraint-dynamic="1.3.4" callerrev="0.1"/>
+				<artifacts>
+					<artifact name="spray-json_2.12" type="jar" ext="jar" status="no" details="" size="294174" time="0" location="/home/masoud/.ivy2/cache/io.spray/spray-json_2.12/jars/spray-json_2.12-1.3.5.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/io/spray/spray-json_2.12/1.3.5/spray-json_2.12-1.3.5.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.scala-lang" name="scala-reflect">
+			<revision name="2.12.7" status="release" pubdate="20180927120203" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.scala-lang.org/" extra-info.apiURL="http://www.scala-lang.org/api/2.12.7/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="25">
+				<license name="BSD 3-Clause" url="http://www.scala-lang.org/license.html"/>
+				<metadata-artifact status="no" details="" size="2825" time="0" location="/home/masoud/.ivy2/cache/org.scala-lang/scala-reflect/ivy-2.12.7.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/scala-lang/scala-reflect/2.12.7/scala-reflect-2.12.7.pom"/>
+				<caller organisation="org.typelevel" name="machinist_2.12" conf="compile, runtime" rev="2.12.7" rev-constraint-default="2.12.7" rev-constraint-dynamic="2.12.7" callerrev="0.6.2"/>
+				<caller organisation="com.typesafe.play" name="play-json_2.11" conf="default, compile, runtime, master" rev="2.12.7" rev-constraint-default="2.12.7" rev-constraint-dynamic="2.12.7" callerrev="2.4.6"/>
+				<caller organisation="org.typelevel" name="machinist_2.12" conf="compile, runtime" rev="2.12.7" rev-constraint-default="2.12.7" rev-constraint-dynamic="2.12.7" callerrev="0.6.5"/>
+				<artifacts>
+					<artifact name="scala-reflect" type="jar" ext="jar" status="no" details="" size="3616372" time="0" location="/home/masoud/.ivy2/cache/org.scala-lang/scala-reflect/jars/scala-reflect-2.12.7.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/scala-lang/scala-reflect/2.12.7/scala-reflect-2.12.7.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.typesafe.play" name="play-json_2.11">
+			<revision name="2.4.6" status="release" pubdate="20151214105024" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://playframework.com" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="18">
+				<license name="Apache-2.0" url="http://www.apache.org/licenses/LICENSE-2.0.html"/>
+				<metadata-artifact status="no" details="" size="4724" time="0" location="/home/masoud/.ivy2/cache/com.typesafe.play/play-json_2.11/ivy-2.4.6.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/typesafe/play/play-json_2.11/2.4.6/play-json_2.11-2.4.6.pom"/>
+				<caller organisation="project1" name="project1_2.12" conf="test, compile, runtime" rev="2.4.6" rev-constraint-default="2.4.6" rev-constraint-dynamic="2.4.6" callerrev="0.1"/>
+				<artifacts>
+					<artifact name="play-json_2.11" type="jar" ext="jar" status="no" details="" size="619402" time="0" location="/home/masoud/.ivy2/cache/com.typesafe.play/play-json_2.11/jars/play-json_2.11-2.4.6.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/typesafe/play/play-json_2.11/2.4.6/play-json_2.11-2.4.6.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.fasterxml.jackson.datatype" name="jackson-datatype-jsr310">
+			<revision name="2.5.4" status="release" pubdate="20150610100508" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://wiki.fasterxml.com/JacksonModuleJSR310" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="30">
+				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="7353" time="0" location="/home/masoud/.ivy2/cache/com.fasterxml.jackson.datatype/jackson-datatype-jsr310/ivy-2.5.4.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/fasterxml/jackson/datatype/jackson-datatype-jsr310/2.5.4/jackson-datatype-jsr310-2.5.4.pom"/>
+				<caller organisation="com.typesafe.play" name="play-json_2.11" conf="default, compile, runtime, master" rev="2.5.4" rev-constraint-default="2.5.4" rev-constraint-dynamic="2.5.4" callerrev="2.4.6"/>
+				<artifacts>
+					<artifact name="jackson-datatype-jsr310" type="bundle" ext="jar" status="no" details="" size="57831" time="0" location="/home/masoud/.ivy2/cache/com.fasterxml.jackson.datatype/jackson-datatype-jsr310/bundles/jackson-datatype-jsr310-2.5.4.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/fasterxml/jackson/datatype/jackson-datatype-jsr310/2.5.4/jackson-datatype-jsr310-2.5.4.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.fasterxml.jackson.datatype" name="jackson-datatype-jdk8">
+			<revision name="2.5.4" status="release" pubdate="20150610100234" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="29">
+				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="7461" time="0" location="/home/masoud/.ivy2/cache/com.fasterxml.jackson.datatype/jackson-datatype-jdk8/ivy-2.5.4.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/fasterxml/jackson/datatype/jackson-datatype-jdk8/2.5.4/jackson-datatype-jdk8-2.5.4.pom"/>
+				<caller organisation="com.typesafe.play" name="play-json_2.11" conf="default, compile, runtime, master" rev="2.5.4" rev-constraint-default="2.5.4" rev-constraint-dynamic="2.5.4" callerrev="2.4.6"/>
+				<artifacts>
+					<artifact name="jackson-datatype-jdk8" type="bundle" ext="jar" status="no" details="" size="18872" time="0" location="/home/masoud/.ivy2/cache/com.fasterxml.jackson.datatype/jackson-datatype-jdk8/bundles/jackson-datatype-jdk8-2.5.4.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/fasterxml/jackson/datatype/jackson-datatype-jdk8/2.5.4/jackson-datatype-jdk8-2.5.4.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.fasterxml.jackson.core" name="jackson-databind">
+			<revision name="2.5.4" status="release" pubdate="20150610061351" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://github.com/FasterXML/jackson" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="28">
+				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="8707" time="0" location="/home/masoud/.ivy2/cache/com.fasterxml.jackson.core/jackson-databind/ivy-2.5.4.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-databind/2.5.4/jackson-databind-2.5.4.pom"/>
+				<caller organisation="com.fasterxml.jackson.datatype" name="jackson-datatype-jdk8" conf="compile, runtime" rev="2.5.4" rev-constraint-default="2.5.4" rev-constraint-dynamic="2.5.4" callerrev="2.5.4"/>
+				<caller organisation="com.fasterxml.jackson.datatype" name="jackson-datatype-jsr310" conf="compile, runtime" rev="2.5.4" rev-constraint-default="2.5.4" rev-constraint-dynamic="2.5.4" callerrev="2.5.4"/>
+				<caller organisation="com.typesafe.play" name="play-json_2.11" conf="default, compile, runtime, master" rev="2.5.4" rev-constraint-default="2.5.4" rev-constraint-dynamic="2.5.4" callerrev="2.4.6"/>
+				<artifacts>
+					<artifact name="jackson-databind" type="bundle" ext="jar" status="no" details="" size="1144035" time="0" location="/home/masoud/.ivy2/cache/com.fasterxml.jackson.core/jackson-databind/bundles/jackson-databind-2.5.4.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-databind/2.5.4/jackson-databind-2.5.4.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.fasterxml.jackson.core" name="jackson-annotations">
+			<revision name="2.5.4" status="release" pubdate="20150610055650" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://github.com/FasterXML/jackson" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="27">
+				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="6416" time="0" location="/home/masoud/.ivy2/cache/com.fasterxml.jackson.core/jackson-annotations/ivy-2.5.4.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-annotations/2.5.4/jackson-annotations-2.5.4.pom"/>
+				<caller organisation="com.typesafe.play" name="play-json_2.11" conf="default, compile, runtime, master" rev="2.5.4" rev-constraint-default="2.5.4" rev-constraint-dynamic="2.5.4" callerrev="2.4.6"/>
+				<caller organisation="com.fasterxml.jackson.core" name="jackson-databind" conf="compile, runtime" rev="2.5.0" rev-constraint-default="2.5.0" rev-constraint-dynamic="2.5.0" callerrev="2.5.4"/>
+				<artifacts>
+					<artifact name="jackson-annotations" type="bundle" ext="jar" status="no" details="" size="39822" time="0" location="/home/masoud/.ivy2/cache/com.fasterxml.jackson.core/jackson-annotations/bundles/jackson-annotations-2.5.4.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-annotations/2.5.4/jackson-annotations-2.5.4.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+			<revision name="2.5.0" evicted="latest-revision" evicted-reason="" downloaded="false" searched="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="-1">
+				<evicted-by rev="2.5.4"/>
+				<caller organisation="com.fasterxml.jackson.core" name="jackson-databind" conf="compile, runtime" rev="2.5.0" rev-constraint-default="2.5.0" rev-constraint-dynamic="2.5.0" callerrev="2.5.4"/>
+				<artifacts>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.fasterxml.jackson.core" name="jackson-core">
+			<revision name="2.5.4" status="release" pubdate="20150610055830" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/FasterXML/jackson" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="26">
+				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="6864" time="0" location="/home/masoud/.ivy2/cache/com.fasterxml.jackson.core/jackson-core/ivy-2.5.4.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-core/2.5.4/jackson-core-2.5.4.pom"/>
+				<caller organisation="com.fasterxml.jackson.datatype" name="jackson-datatype-jdk8" conf="compile, runtime" rev="2.5.4" rev-constraint-default="2.5.4" rev-constraint-dynamic="2.5.4" callerrev="2.5.4"/>
+				<caller organisation="com.fasterxml.jackson.datatype" name="jackson-datatype-jsr310" conf="compile, runtime" rev="2.5.4" rev-constraint-default="2.5.4" rev-constraint-dynamic="2.5.4" callerrev="2.5.4"/>
+				<caller organisation="com.typesafe.play" name="play-json_2.11" conf="default, compile, runtime, master" rev="2.5.4" rev-constraint-default="2.5.4" rev-constraint-dynamic="2.5.4" callerrev="2.4.6"/>
+				<caller organisation="com.fasterxml.jackson.core" name="jackson-databind" conf="compile, runtime" rev="2.5.4" rev-constraint-default="2.5.4" rev-constraint-dynamic="2.5.4" callerrev="2.5.4"/>
+				<artifacts>
+					<artifact name="jackson-core" type="bundle" ext="jar" status="no" details="" size="229999" time="0" location="/home/masoud/.ivy2/cache/com.fasterxml.jackson.core/jackson-core/bundles/jackson-core-2.5.4.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-core/2.5.4/jackson-core-2.5.4.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.joda" name="joda-convert">
+			<revision name="1.7" status="release" pubdate="20140804190718" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.joda.org/joda-convert/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="24">
+				<license name="Apache 2" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="6252" time="0" location="/home/masoud/.ivy2/cache/org.joda/joda-convert/ivy-1.7.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/joda/joda-convert/1.7/joda-convert-1.7.pom"/>
+				<caller organisation="com.typesafe.play" name="play-json_2.11" conf="default, compile, runtime, master" rev="1.7" rev-constraint-default="1.7" rev-constraint-dynamic="1.7" callerrev="2.4.6"/>
+				<artifacts>
+					<artifact name="joda-convert" type="jar" ext="jar" status="no" details="" size="102981" time="0" location="/home/masoud/.ivy2/cache/org.joda/joda-convert/jars/joda-convert-1.7.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/joda/joda-convert/1.7/joda-convert-1.7.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="joda-time" name="joda-time">
+			<revision name="2.8.1" status="release" pubdate="20190129155048" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.joda.org/joda-time/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="23">
+				<license name="Apache 2" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="6595" time="0" location="/home/masoud/.ivy2/cache/joda-time/joda-time/ivy-2.8.1.xml" searched="false" origin-is-local="false" origin-location="https://artifactory.bale.ai:3443/artifactory/bale-mvn-remote-repo/joda-time/joda-time/2.8.1/joda-time-2.8.1.pom"/>
+				<caller organisation="com.typesafe.play" name="play-json_2.11" conf="default, compile, runtime, master" rev="2.8.1" rev-constraint-default="2.8.1" rev-constraint-dynamic="2.8.1" callerrev="2.4.6"/>
+				<artifacts>
+					<artifact name="joda-time" type="jar" ext="jar" status="no" details="" size="621931" time="0" location="/home/masoud/.ivy2/cache/joda-time/joda-time/jars/joda-time-2.8.1.jar">
+						<origin-location is-local="false" location="https://artifactory.bale.ai:3443/artifactory/bale-mvn-remote-repo/joda-time/joda-time/2.8.1/joda-time-2.8.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.typesafe.play" name="play-datacommons_2.11">
+			<revision name="2.4.6" status="release" pubdate="20151214104936" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://playframework.com" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="22">
+				<license name="Apache-2.0" url="http://www.apache.org/licenses/LICENSE-2.0.html"/>
+				<metadata-artifact status="no" details="" size="2671" time="0" location="/home/masoud/.ivy2/cache/com.typesafe.play/play-datacommons_2.11/ivy-2.4.6.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/typesafe/play/play-datacommons_2.11/2.4.6/play-datacommons_2.11-2.4.6.pom"/>
+				<caller organisation="com.typesafe.play" name="play-json_2.11" conf="default, compile, runtime, master" rev="2.4.6" rev-constraint-default="2.4.6" rev-constraint-dynamic="2.4.6" callerrev="2.4.6"/>
+				<artifacts>
+					<artifact name="play-datacommons_2.11" type="jar" ext="jar" status="no" details="" size="5613" time="0" location="/home/masoud/.ivy2/cache/com.typesafe.play/play-datacommons_2.11/jars/play-datacommons_2.11-2.4.6.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/typesafe/play/play-datacommons_2.11/2.4.6/play-datacommons_2.11-2.4.6.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.typesafe.play" name="play-functional_2.11">
+			<revision name="2.4.6" status="release" pubdate="20151214104953" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://playframework.com" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="21">
+				<license name="Apache-2.0" url="http://www.apache.org/licenses/LICENSE-2.0.html"/>
+				<metadata-artifact status="no" details="" size="2668" time="0" location="/home/masoud/.ivy2/cache/com.typesafe.play/play-functional_2.11/ivy-2.4.6.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/typesafe/play/play-functional_2.11/2.4.6/play-functional_2.11-2.4.6.pom"/>
+				<caller organisation="com.typesafe.play" name="play-json_2.11" conf="default, compile, runtime, master" rev="2.4.6" rev-constraint-default="2.4.6" rev-constraint-dynamic="2.4.6" callerrev="2.4.6"/>
+				<artifacts>
+					<artifact name="play-functional_2.11" type="jar" ext="jar" status="no" details="" size="401130" time="0" location="/home/masoud/.ivy2/cache/com.typesafe.play/play-functional_2.11/jars/play-functional_2.11-2.4.6.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/typesafe/play/play-functional_2.11/2.4.6/play-functional_2.11-2.4.6.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.typesafe.play" name="play-iteratees_2.11">
+			<revision name="2.4.6" status="release" pubdate="20151214105002" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://playframework.com" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="19">
+				<license name="Apache-2.0" url="http://www.apache.org/licenses/LICENSE-2.0.html"/>
+				<metadata-artifact status="no" details="" size="3307" time="0" location="/home/masoud/.ivy2/cache/com.typesafe.play/play-iteratees_2.11/ivy-2.4.6.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/typesafe/play/play-iteratees_2.11/2.4.6/play-iteratees_2.11-2.4.6.pom"/>
+				<caller organisation="com.typesafe.play" name="play-json_2.11" conf="default, compile, runtime, master" rev="2.4.6" rev-constraint-default="2.4.6" rev-constraint-dynamic="2.4.6" callerrev="2.4.6"/>
+				<artifacts>
+					<artifact name="play-iteratees_2.11" type="jar" ext="jar" status="no" details="" size="766427" time="0" location="/home/masoud/.ivy2/cache/com.typesafe.play/play-iteratees_2.11/jars/play-iteratees_2.11-2.4.6.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/typesafe/play/play-iteratees_2.11/2.4.6/play-iteratees_2.11-2.4.6.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.scala-stm" name="scala-stm_2.11">
+			<revision name="0.7" status="release" pubdate="20140418091442" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://nbronson.github.com/scala-stm/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="20">
+				<license name="BSD" url="https://github.com/nbronson/scala-stm/blob/master/LICENSE.txt"/>
+				<metadata-artifact status="no" details="" size="2663" time="0" location="/home/masoud/.ivy2/cache/org.scala-stm/scala-stm_2.11/ivy-0.7.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/scala-stm/scala-stm_2.11/0.7/scala-stm_2.11-0.7.pom"/>
+				<caller organisation="com.typesafe.play" name="play-iteratees_2.11" conf="compile, runtime" rev="0.7" rev-constraint-default="0.7" rev-constraint-dynamic="0.7" callerrev="2.4.6"/>
+				<artifacts>
+					<artifact name="scala-stm_2.11" type="jar" ext="jar" status="no" details="" size="630306" time="0" location="/home/masoud/.ivy2/cache/org.scala-stm/scala-stm_2.11/jars/scala-stm_2.11-0.7.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/scala-stm/scala-stm_2.11/0.7/scala-stm_2.11-0.7.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.typesafe.slick" name="slick-hikaricp_2.12">
+			<revision name="3.2.3" status="release" pubdate="20190129184201" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://slick.typesafe.com" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="11">
+				<license name="Two-clause BSD-style license" url="http://github.com/slick/slick/blob/master/LICENSE.txt"/>
+				<metadata-artifact status="no" details="" size="3036" time="0" location="/home/masoud/.ivy2/cache/com.typesafe.slick/slick-hikaricp_2.12/ivy-3.2.3.xml" searched="false" origin-is-local="false" origin-location="https://artifactory.bale.ai:3443/artifactory/bale-mvn-remote-repo/com/typesafe/slick/slick-hikaricp_2.12/3.2.3/slick-hikaricp_2.12-3.2.3.pom"/>
+				<caller organisation="project1" name="project1_2.12" conf="test, compile, runtime" rev="3.2.3" rev-constraint-default="3.2.3" rev-constraint-dynamic="3.2.3" callerrev="0.1"/>
+				<artifacts>
+					<artifact name="slick-hikaricp_2.12" type="bundle" ext="jar" status="no" details="" size="6959" time="0" location="/home/masoud/.ivy2/cache/com.typesafe.slick/slick-hikaricp_2.12/bundles/slick-hikaricp_2.12-3.2.3.jar">
+						<origin-location is-local="false" location="https://artifactory.bale.ai:3443/artifactory/bale-mvn-remote-repo/com/typesafe/slick/slick-hikaricp_2.12/3.2.3/slick-hikaricp_2.12-3.2.3.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.zaxxer" name="HikariCP">
+			<revision name="2.5.1" status="release" pubdate="20190129134802" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/brettwooldridge/HikariCP" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="12">
+				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="7421" time="0" location="/home/masoud/.ivy2/cache/com.zaxxer/HikariCP/ivy-2.5.1.xml" searched="false" origin-is-local="false" origin-location="https://artifactory.bale.ai:3443/artifactory/bale-mvn-remote-repo/com/zaxxer/HikariCP/2.5.1/HikariCP-2.5.1.pom"/>
+				<caller organisation="com.typesafe.slick" name="slick-hikaricp_2.12" conf="default, compile, runtime, master" rev="2.5.1" rev-constraint-default="2.5.1" rev-constraint-dynamic="2.5.1" callerrev="3.2.3"/>
+				<artifacts>
+					<artifact name="HikariCP" type="bundle" ext="jar" status="no" details="" size="136363" time="0" location="/home/masoud/.ivy2/cache/com.zaxxer/HikariCP/bundles/HikariCP-2.5.1.jar">
+						<origin-location is-local="false" location="https://artifactory.bale.ai:3443/artifactory/bale-mvn-remote-repo/com/zaxxer/HikariCP/2.5.1/HikariCP-2.5.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.slf4j" name="slf4j-nop">
+			<revision name="1.6.4" status="release" pubdate="20111101021556" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.slf4j.org" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="10">
+				<license name="MIT License" url="http://www.opensource.org/licenses/mit-license.php"/>
+				<metadata-artifact status="no" details="" size="4291" time="0" location="/home/masoud/.ivy2/cache/org.slf4j/slf4j-nop/ivy-1.6.4.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/slf4j/slf4j-nop/1.6.4/slf4j-nop-1.6.4.pom"/>
+				<caller organisation="project1" name="project1_2.12" conf="test, compile, runtime" rev="1.6.4" rev-constraint-default="1.6.4" rev-constraint-dynamic="1.6.4" callerrev="0.1"/>
+				<artifacts>
+					<artifact name="slf4j-nop" type="jar" ext="jar" status="no" details="" size="4811" time="0" location="/home/masoud/.ivy2/cache/org.slf4j/slf4j-nop/jars/slf4j-nop-1.6.4.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/slf4j/slf4j-nop/1.6.4/slf4j-nop-1.6.4.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.typesafe.slick" name="slick_2.12">
+			<revision name="3.2.3" status="release" pubdate="20190129184041" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://slick.typesafe.com" downloaded="false" searched="false" default="false" conf="default, compile, runtime(*), master(compile), runtime, default(compile), compile(*), master" position="8">
+				<license name="Two-clause BSD-style license" url="http://github.com/slick/slick/blob/master/LICENSE.txt"/>
+				<metadata-artifact status="no" details="" size="3130" time="0" location="/home/masoud/.ivy2/cache/com.typesafe.slick/slick_2.12/ivy-3.2.3.xml" searched="false" origin-is-local="false" origin-location="https://artifactory.bale.ai:3443/artifactory/bale-mvn-remote-repo/com/typesafe/slick/slick_2.12/3.2.3/slick_2.12-3.2.3.pom"/>
+				<caller organisation="com.typesafe.slick" name="slick-hikaricp_2.12" conf="default, compile, runtime, master" rev="3.2.3" rev-constraint-default="3.2.3" rev-constraint-dynamic="3.2.3" callerrev="3.2.3"/>
+				<caller organisation="project1" name="project1_2.12" conf="test, compile, runtime" rev="3.2.3" rev-constraint-default="3.2.3" rev-constraint-dynamic="3.2.3" callerrev="0.1"/>
+				<caller organisation="com.typesafe.slick" name="slick-codegen_2.12" conf="default, compile, runtime, master" rev="3.2.3" rev-constraint-default="3.2.3" rev-constraint-dynamic="3.2.3" callerrev="3.2.3"/>
+				<artifacts>
+					<artifact name="slick_2.12" type="bundle" ext="jar" status="no" details="" size="3820017" time="0" location="/home/masoud/.ivy2/cache/com.typesafe.slick/slick_2.12/bundles/slick_2.12-3.2.3.jar">
+						<origin-location is-local="false" location="https://artifactory.bale.ai:3443/artifactory/bale-mvn-remote-repo/com/typesafe/slick/slick_2.12/3.2.3/slick_2.12-3.2.3.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.reactivestreams" name="reactive-streams">
+			<revision name="1.0.0" status="release" pubdate="20150429204454" resolver="sbt-chain" artresolver="sbt-chain" evicted="latest-revision" evicted-reason="" homepage="http://www.reactive-streams.org/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="-1">
+				<license name="CC0" url="http://creativecommons.org/publicdomain/zero/1.0/"/>
+				<metadata-artifact status="no" details="" size="2397" time="0" location="/home/masoud/.ivy2/cache/org.reactivestreams/reactive-streams/ivy-1.0.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/reactivestreams/reactive-streams/1.0.0/reactive-streams-1.0.0.pom"/>
+				<evicted-by rev="1.0.2"/>
+				<caller organisation="com.typesafe.slick" name="slick_2.12" conf="default, compile, runtime, master" rev="1.0.0" rev-constraint-default="1.0.0" rev-constraint-dynamic="1.0.0" callerrev="3.2.3"/>
+				<artifacts>
+				</artifacts>
+			</revision>
+			<revision name="1.0.2" status="release" pubdate="20190129183859" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.reactive-streams.org/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="15">
+				<license name="CC0" url="http://creativecommons.org/publicdomain/zero/1.0/"/>
+				<metadata-artifact status="no" details="" size="2523" time="0" location="/home/masoud/.ivy2/cache/org.reactivestreams/reactive-streams/ivy-1.0.2.xml" searched="false" origin-is-local="false" origin-location="https://artifactory.bale.ai:3443/artifactory/bale-mvn-remote-repo/org/reactivestreams/reactive-streams/1.0.2/reactive-streams-1.0.2.pom"/>
+				<caller organisation="com.typesafe.slick" name="slick_2.12" conf="default, compile, runtime, master" rev="1.0.0" rev-constraint-default="1.0.0" rev-constraint-dynamic="1.0.0" callerrev="3.2.3"/>
+				<caller organisation="com.typesafe.akka" name="akka-stream_2.12" conf="default, compile, runtime, master" rev="1.0.2" rev-constraint-default="1.0.2" rev-constraint-dynamic="1.0.2" callerrev="2.5.19"/>
+				<artifacts>
+					<artifact name="reactive-streams" type="jar" ext="jar" status="no" details="" size="2097" time="0" location="/home/masoud/.ivy2/cache/org.reactivestreams/reactive-streams/jars/reactive-streams-1.0.2.jar">
+						<origin-location is-local="false" location="https://artifactory.bale.ai:3443/artifactory/bale-mvn-remote-repo/org/reactivestreams/reactive-streams/1.0.2/reactive-streams-1.0.2.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.slf4j" name="slf4j-api">
+			<revision name="1.7.25" status="release" pubdate="20170316200632" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.slf4j.org" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="9">
+				<license name="MIT License" url="http://www.opensource.org/licenses/mit-license.php"/>
+				<metadata-artifact status="no" details="" size="5377" time="0" location="/home/masoud/.ivy2/cache/org.slf4j/slf4j-api/ivy-1.7.25.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/slf4j/slf4j-api/1.7.25/slf4j-api-1.7.25.pom"/>
+				<caller organisation="org.slf4j" name="slf4j-nop" conf="default, compile, runtime, master" rev="1.6.4" rev-constraint-default="1.6.4" rev-constraint-dynamic="1.6.4" callerrev="1.6.4"/>
+				<caller organisation="com.typesafe.slick" name="slick_2.12" conf="default, compile, runtime, master" rev="1.7.25" rev-constraint-default="1.7.25" rev-constraint-dynamic="1.7.25" callerrev="3.2.3"/>
+				<caller organisation="com.zaxxer" name="HikariCP" conf="compile, runtime" rev="1.7.21" rev-constraint-default="1.7.21" rev-constraint-dynamic="1.7.21" callerrev="2.5.1"/>
+				<artifacts>
+					<artifact name="slf4j-api" type="jar" ext="jar" status="no" details="" size="41203" time="0" location="/home/masoud/.ivy2/cache/org.slf4j/slf4j-api/jars/slf4j-api-1.7.25.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/slf4j/slf4j-api/1.7.25/slf4j-api-1.7.25.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+			<revision name="1.7.21" evicted="latest-revision" evicted-reason="" downloaded="false" searched="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="-1">
+				<evicted-by rev="1.7.25"/>
+				<caller organisation="com.zaxxer" name="HikariCP" conf="compile, runtime" rev="1.7.21" rev-constraint-default="1.7.21" rev-constraint-dynamic="1.7.21" callerrev="2.5.1"/>
+				<artifacts>
+				</artifacts>
+			</revision>
+			<revision name="1.6.4" evicted="latest-revision" evicted-reason="" downloaded="false" searched="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="-1">
+				<evicted-by rev="1.7.25"/>
+				<caller organisation="org.slf4j" name="slf4j-nop" conf="default, compile, runtime, master" rev="1.6.4" rev-constraint-default="1.6.4" rev-constraint-dynamic="1.6.4" callerrev="1.6.4"/>
+				<artifacts>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.typesafe.akka" name="akka-http_2.12">
+			<revision name="10.1.7" status="release" pubdate="20190104134024" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://akka.io" extra-info.apiURL="http://doc.akka.io/api/akka-http/10.1.7/" downloaded="false" searched="false" default="false" conf="default, compile, runtime(*), master(compile), runtime, default(compile), compile(*), master" position="5">
+				<license name="Apache-2.0" url="https://opensource.org/licenses/Apache-2.0"/>
+				<metadata-artifact status="no" details="" size="3106" time="0" location="/home/masoud/.ivy2/cache/com.typesafe.akka/akka-http_2.12/ivy-10.1.7.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/typesafe/akka/akka-http_2.12/10.1.7/akka-http_2.12-10.1.7.pom"/>
+				<caller organisation="com.typesafe.akka" name="akka-http-spray-json_2.12" conf="default, compile, runtime, master" rev="10.1.7" rev-constraint-default="10.1.7" rev-constraint-dynamic="10.1.7" callerrev="10.1.7"/>
+				<caller organisation="project1" name="project1_2.12" conf="test, compile, runtime" rev="10.1.7" rev-constraint-default="10.1.7" rev-constraint-dynamic="10.1.7" callerrev="0.1"/>
+				<caller organisation="ch.megard" name="akka-http-cors_2.12" conf="default, compile, runtime, master" rev="10.1.7" rev-constraint-default="10.1.7" rev-constraint-dynamic="10.1.7" callerrev="0.3.4"/>
+				<artifacts>
+					<artifact name="akka-http_2.12" type="jar" ext="jar" status="no" details="" size="1732704" time="0" location="/home/masoud/.ivy2/cache/com.typesafe.akka/akka-http_2.12/jars/akka-http_2.12-10.1.7.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/typesafe/akka/akka-http_2.12/10.1.7/akka-http_2.12-10.1.7.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.typesafe.akka" name="akka-http-core_2.12">
+			<revision name="10.1.7" status="release" pubdate="20190104134049" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://akka.io" extra-info.apiURL="http://doc.akka.io/api/akka-http/10.1.7/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="6">
+				<license name="Apache-2.0" url="https://opensource.org/licenses/Apache-2.0"/>
+				<metadata-artifact status="no" details="" size="3730" time="0" location="/home/masoud/.ivy2/cache/com.typesafe.akka/akka-http-core_2.12/ivy-10.1.7.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/typesafe/akka/akka-http-core_2.12/10.1.7/akka-http-core_2.12-10.1.7.pom"/>
+				<caller organisation="com.typesafe.akka" name="akka-http_2.12" conf="default, compile, runtime, master" rev="10.1.7" rev-constraint-default="10.1.7" rev-constraint-dynamic="10.1.7" callerrev="10.1.7"/>
+				<artifacts>
+					<artifact name="akka-http-core_2.12" type="jar" ext="jar" status="no" details="" size="3523205" time="0" location="/home/masoud/.ivy2/cache/com.typesafe.akka/akka-http-core_2.12/jars/akka-http-core_2.12-10.1.7.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/typesafe/akka/akka-http-core_2.12/10.1.7/akka-http-core_2.12-10.1.7.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.typesafe.akka" name="akka-stream-testkit_2.12">
+			<revision name="2.5.19" status="release" pubdate="20181207145744" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://akka.io/" extra-info.apiURL="http://doc.akka.io/api/akka/2.5.19" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="52">
+				<license name="Apache License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0"/>
+				<metadata-artifact status="no" details="" size="3489" time="0" location="/home/masoud/.ivy2/cache/com.typesafe.akka/akka-stream-testkit_2.12/ivy-2.5.19.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/typesafe/akka/akka-stream-testkit_2.12/2.5.19/akka-stream-testkit_2.12-2.5.19.pom"/>
+				<caller organisation="project1" name="project1_2.12" conf="test, compile, runtime" rev="2.5.19" rev-constraint-default="2.5.19" rev-constraint-dynamic="2.5.19" callerrev="0.1"/>
+				<artifacts>
+					<artifact name="akka-stream-testkit_2.12" type="jar" ext="jar" status="no" details="" size="117384" time="0" location="/home/masoud/.ivy2/cache/com.typesafe.akka/akka-stream-testkit_2.12/jars/akka-stream-testkit_2.12-2.5.19.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/typesafe/akka/akka-stream-testkit_2.12/2.5.19/akka-stream-testkit_2.12-2.5.19.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.typesafe.akka" name="akka-testkit_2.12">
+			<revision name="2.5.19" status="release" pubdate="20181207145306" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://akka.io/" extra-info.apiURL="http://doc.akka.io/api/akka/2.5.19" downloaded="false" searched="false" default="false" conf="default, compile, runtime(*), master(compile), runtime, default(compile), compile(*), master" position="51">
+				<license name="Apache License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0"/>
+				<metadata-artifact status="no" details="" size="3693" time="0" location="/home/masoud/.ivy2/cache/com.typesafe.akka/akka-testkit_2.12/ivy-2.5.19.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/typesafe/akka/akka-testkit_2.12/2.5.19/akka-testkit_2.12-2.5.19.pom"/>
+				<caller organisation="project1" name="project1_2.12" conf="test, compile, runtime" rev="2.5.19" rev-constraint-default="2.5.19" rev-constraint-dynamic="2.5.19" callerrev="0.1"/>
+				<caller organisation="com.typesafe.akka" name="akka-stream-testkit_2.12" conf="default, compile, runtime, master" rev="2.5.19" rev-constraint-default="2.5.19" rev-constraint-dynamic="2.5.19" callerrev="2.5.19"/>
+				<artifacts>
+					<artifact name="akka-testkit_2.12" type="jar" ext="jar" status="no" details="" size="269936" time="0" location="/home/masoud/.ivy2/cache/com.typesafe.akka/akka-testkit_2.12/jars/akka-testkit_2.12-2.5.19.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/typesafe/akka/akka-testkit_2.12/2.5.19/akka-testkit_2.12-2.5.19.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.typesafe.akka" name="akka-stream_2.12">
+			<revision name="2.5.19" status="release" pubdate="20181207145619" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://akka.io/" extra-info.apiURL="http://doc.akka.io/api/akka/2.5.19" downloaded="false" searched="false" default="false" conf="default, compile, runtime(*), master(compile), runtime, default(compile), compile(*), master" position="13">
+				<license name="Apache License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0"/>
+				<metadata-artifact status="no" details="" size="3539" time="0" location="/home/masoud/.ivy2/cache/com.typesafe.akka/akka-stream_2.12/ivy-2.5.19.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/typesafe/akka/akka-stream_2.12/2.5.19/akka-stream_2.12-2.5.19.pom"/>
+				<caller organisation="project1" name="project1_2.12" conf="test, compile, runtime" rev="2.5.19" rev-constraint-default="2.5.19" rev-constraint-dynamic="2.5.19" callerrev="0.1"/>
+				<caller organisation="com.typesafe.akka" name="akka-stream-testkit_2.12" conf="default, compile, runtime, master" rev="2.5.19" rev-constraint-default="2.5.19" rev-constraint-dynamic="2.5.19" callerrev="2.5.19"/>
+				<artifacts>
+					<artifact name="akka-stream_2.12" type="jar" ext="jar" status="no" details="" size="4409949" time="0" location="/home/masoud/.ivy2/cache/com.typesafe.akka/akka-stream_2.12/jars/akka-stream_2.12-2.5.19.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/typesafe/akka/akka-stream_2.12/2.5.19/akka-stream_2.12-2.5.19.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.typesafe" name="ssl-config-core_2.12">
+			<revision name="0.3.6" status="release" pubdate="20181011123751" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/lightbend/ssl-config" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="16">
+				<license name="Apache-2.0" url="https://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="3715" time="0" location="/home/masoud/.ivy2/cache/com.typesafe/ssl-config-core_2.12/ivy-0.3.6.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/typesafe/ssl-config-core_2.12/0.3.6/ssl-config-core_2.12-0.3.6.pom"/>
+				<caller organisation="com.typesafe.akka" name="akka-stream_2.12" conf="default, compile, runtime, master" rev="0.3.6" rev-constraint-default="0.3.6" rev-constraint-dynamic="0.3.6" callerrev="2.5.19"/>
+				<artifacts>
+					<artifact name="ssl-config-core_2.12" type="bundle" ext="jar" status="no" details="" size="271326" time="0" location="/home/masoud/.ivy2/cache/com.typesafe/ssl-config-core_2.12/bundles/ssl-config-core_2.12-0.3.6.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/typesafe/ssl-config-core_2.12/0.3.6/ssl-config-core_2.12-0.3.6.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.scala-lang.modules" name="scala-parser-combinators_2.12">
+			<revision name="1.1.1" status="release" pubdate="20190129183909" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.scala-lang.org/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="17">
+				<license name="BSD 3-clause" url="http://opensource.org/licenses/BSD-3-Clause"/>
+				<metadata-artifact status="no" details="" size="2929" time="0" location="/home/masoud/.ivy2/cache/org.scala-lang.modules/scala-parser-combinators_2.12/ivy-1.1.1.xml" searched="false" origin-is-local="false" origin-location="https://artifactory.bale.ai:3443/artifactory/bale-mvn-remote-repo/org/scala-lang/modules/scala-parser-combinators_2.12/1.1.1/scala-parser-combinators_2.12-1.1.1.pom"/>
+				<caller organisation="com.typesafe" name="ssl-config-core_2.12" conf="compile, runtime" rev="1.1.1" rev-constraint-default="1.1.1" rev-constraint-dynamic="1.1.1" callerrev="0.3.6"/>
+				<artifacts>
+					<artifact name="scala-parser-combinators_2.12" type="bundle" ext="jar" status="no" details="" size="226573" time="0" location="/home/masoud/.ivy2/cache/org.scala-lang.modules/scala-parser-combinators_2.12/bundles/scala-parser-combinators_2.12-1.1.1.jar">
+						<origin-location is-local="false" location="https://artifactory.bale.ai:3443/artifactory/bale-mvn-remote-repo/org/scala-lang/modules/scala-parser-combinators_2.12/1.1.1/scala-parser-combinators_2.12-1.1.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.typesafe.akka" name="akka-protobuf_2.12">
+			<revision name="2.5.19" status="release" pubdate="20181207144838" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://akka.io/" extra-info.apiURL="http://doc.akka.io/api/akka/2.5.19" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="14">
+				<license name="Apache License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0"/>
+				<metadata-artifact status="no" details="" size="2810" time="0" location="/home/masoud/.ivy2/cache/com.typesafe.akka/akka-protobuf_2.12/ivy-2.5.19.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/typesafe/akka/akka-protobuf_2.12/2.5.19/akka-protobuf_2.12-2.5.19.pom"/>
+				<caller organisation="com.typesafe.akka" name="akka-stream_2.12" conf="default, compile, runtime, master" rev="2.5.19" rev-constraint-default="2.5.19" rev-constraint-dynamic="2.5.19" callerrev="2.5.19"/>
+				<artifacts>
+					<artifact name="akka-protobuf_2.12" type="jar" ext="jar" status="no" details="" size="483842" time="0" location="/home/masoud/.ivy2/cache/com.typesafe.akka/akka-protobuf_2.12/jars/akka-protobuf_2.12-2.5.19.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/typesafe/akka/akka-protobuf_2.12/2.5.19/akka-protobuf_2.12-2.5.19.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.typesafe.akka" name="akka-parsing_2.12">
+			<revision name="10.1.7" status="release" pubdate="20190104134109" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://akka.io" extra-info.apiURL="http://doc.akka.io/api/akka-http/10.1.7/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="7">
+				<license name="Apache-2.0" url="https://opensource.org/licenses/Apache-2.0"/>
+				<metadata-artifact status="no" details="" size="3109" time="0" location="/home/masoud/.ivy2/cache/com.typesafe.akka/akka-parsing_2.12/ivy-10.1.7.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/typesafe/akka/akka-parsing_2.12/10.1.7/akka-parsing_2.12-10.1.7.pom"/>
+				<caller organisation="com.typesafe.akka" name="akka-http-core_2.12" conf="compile, runtime" rev="10.1.7" rev-constraint-default="10.1.7" rev-constraint-dynamic="10.1.7" callerrev="10.1.7"/>
+				<artifacts>
+					<artifact name="akka-parsing_2.12" type="jar" ext="jar" status="no" details="" size="963928" time="0" location="/home/masoud/.ivy2/cache/com.typesafe.akka/akka-parsing_2.12/jars/akka-parsing_2.12-10.1.7.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/typesafe/akka/akka-parsing_2.12/10.1.7/akka-parsing_2.12-10.1.7.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.typesafe.akka" name="akka-actor_2.12">
+			<revision name="2.5.19" status="release" pubdate="20181207144755" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://akka.io/" extra-info.apiURL="http://doc.akka.io/api/akka/2.5.19" downloaded="false" searched="false" default="false" conf="default, compile, runtime(*), master(compile), runtime, default(compile), compile(*), master" position="2">
+				<license name="Apache License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0"/>
+				<metadata-artifact status="no" details="" size="3102" time="0" location="/home/masoud/.ivy2/cache/com.typesafe.akka/akka-actor_2.12/ivy-2.5.19.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/typesafe/akka/akka-actor_2.12/2.5.19/akka-actor_2.12-2.5.19.pom"/>
+				<caller organisation="com.typesafe.akka" name="akka-stream_2.12" conf="default, compile, runtime, master" rev="2.5.19" rev-constraint-default="2.5.19" rev-constraint-dynamic="2.5.19" callerrev="2.5.19"/>
+				<caller organisation="project1" name="project1_2.12" conf="test, compile, runtime" rev="2.5.19" rev-constraint-default="2.5.19" rev-constraint-dynamic="2.5.19" callerrev="0.1"/>
+				<caller organisation="com.typesafe.akka" name="akka-testkit_2.12" conf="default, compile, runtime, master" rev="2.5.19" rev-constraint-default="2.5.19" rev-constraint-dynamic="2.5.19" callerrev="2.5.19"/>
+				<artifacts>
+					<artifact name="akka-actor_2.12" type="jar" ext="jar" status="no" details="" size="3472714" time="0" location="/home/masoud/.ivy2/cache/com.typesafe.akka/akka-actor_2.12/jars/akka-actor_2.12-2.5.19.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/typesafe/akka/akka-actor_2.12/2.5.19/akka-actor_2.12-2.5.19.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.scala-lang.modules" name="scala-java8-compat_2.12">
+			<revision name="0.8.0" status="release" pubdate="20190129153731" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.scala-lang.org/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="4">
+				<license name="BSD 3-clause" url="http://opensource.org/licenses/BSD-3-Clause"/>
+				<metadata-artifact status="no" details="" size="3036" time="0" location="/home/masoud/.ivy2/cache/org.scala-lang.modules/scala-java8-compat_2.12/ivy-0.8.0.xml" searched="false" origin-is-local="false" origin-location="https://artifactory.bale.ai:3443/artifactory/bale-mvn-remote-repo/org/scala-lang/modules/scala-java8-compat_2.12/0.8.0/scala-java8-compat_2.12-0.8.0.pom"/>
+				<caller organisation="com.typesafe.akka" name="akka-actor_2.12" conf="default, compile, runtime, master" rev="0.8.0" rev-constraint-default="0.8.0" rev-constraint-dynamic="0.8.0" callerrev="2.5.19"/>
+				<artifacts>
+					<artifact name="scala-java8-compat_2.12" type="bundle" ext="jar" status="no" details="" size="1165728" time="0" location="/home/masoud/.ivy2/cache/org.scala-lang.modules/scala-java8-compat_2.12/bundles/scala-java8-compat_2.12-0.8.0.jar">
+						<origin-location is-local="false" location="https://artifactory.bale.ai:3443/artifactory/bale-mvn-remote-repo/org/scala-lang/modules/scala-java8-compat_2.12/0.8.0/scala-java8-compat_2.12-0.8.0.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.typesafe" name="config">
+			<revision name="1.3.3" status="release" pubdate="20190129155216" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/lightbend/config" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="3">
+				<license name="Apache License, Version 2.0" url="https://www.apache.org/licenses/LICENSE-2.0"/>
+				<metadata-artifact status="no" details="" size="2874" time="0" location="/home/masoud/.ivy2/cache/com.typesafe/config/ivy-1.3.3.xml" searched="false" origin-is-local="false" origin-location="https://artifactory.bale.ai:3443/artifactory/bale-mvn-remote-repo/com/typesafe/config/1.3.3/config-1.3.3.pom"/>
+				<caller organisation="com.typesafe" name="ssl-config-core_2.12" conf="compile, runtime" rev="1.3.3" rev-constraint-default="1.3.3" rev-constraint-dynamic="1.3.3" callerrev="0.3.6"/>
+				<caller organisation="com.typesafe.play" name="play-iteratees_2.11" conf="compile, runtime" rev="1.3.0" rev-constraint-default="1.3.0" rev-constraint-dynamic="1.3.0" callerrev="2.4.6"/>
+				<caller organisation="com.typesafe.slick" name="slick_2.12" conf="default, compile, runtime, master" rev="1.2.1" rev-constraint-default="1.2.1" rev-constraint-dynamic="1.2.1" callerrev="3.2.3"/>
+				<caller organisation="com.typesafe.akka" name="akka-actor_2.12" conf="default, compile, runtime, master" rev="1.3.3" rev-constraint-default="1.3.3" rev-constraint-dynamic="1.3.3" callerrev="2.5.19"/>
+				<artifacts>
+					<artifact name="config" type="bundle" ext="jar" status="no" details="" size="286090" time="0" location="/home/masoud/.ivy2/cache/com.typesafe/config/bundles/config-1.3.3.jar">
+						<origin-location is-local="false" location="https://artifactory.bale.ai:3443/artifactory/bale-mvn-remote-repo/com/typesafe/config/1.3.3/config-1.3.3.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+			<revision name="1.3.0" evicted="latest-revision" evicted-reason="" downloaded="false" searched="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="-1">
+				<evicted-by rev="1.3.3"/>
+				<caller organisation="com.typesafe.play" name="play-iteratees_2.11" conf="compile, runtime" rev="1.3.0" rev-constraint-default="1.3.0" rev-constraint-dynamic="1.3.0" callerrev="2.4.6"/>
+				<artifacts>
+				</artifacts>
+			</revision>
+			<revision name="1.2.1" evicted="latest-revision" evicted-reason="" downloaded="false" searched="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="-1">
+				<evicted-by rev="1.3.3"/>
+				<caller organisation="com.typesafe.slick" name="slick_2.12" conf="default, compile, runtime, master" rev="1.2.1" rev-constraint-default="1.2.1" rev-constraint-dynamic="1.2.1" callerrev="3.2.3"/>
+				<artifacts>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.h2database" name="h2">
+			<revision name="1.4.197" status="release" pubdate="20180318235844" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.h2database.com" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="1">
+				<license name="MPL 2.0 or EPL 1.0" url="http://h2database.com/html/license.html"/>
+				<metadata-artifact status="no" details="" size="2454" time="0" location="/home/masoud/.ivy2/cache/com.h2database/h2/ivy-1.4.197.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/h2database/h2/1.4.197/h2-1.4.197.pom"/>
+				<caller organisation="project1" name="project1_2.12" conf="test, compile, runtime" rev="1.4.197" rev-constraint-default="1.4.197" rev-constraint-dynamic="1.4.197" callerrev="0.1"/>
+				<artifacts>
+					<artifact name="h2" type="jar" ext="jar" status="no" details="" size="1927540" time="0" location="/home/masoud/.ivy2/cache/com.h2database/h2/jars/h2-1.4.197.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/h2database/h2/1.4.197/h2-1.4.197.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.scala-lang" name="scala-library">
+			<revision name="2.12.7" status="release" pubdate="20180927120542" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.scala-lang.org/" extra-info.apiURL="http://www.scala-lang.org/api/2.12.7/" downloaded="false" searched="false" default="false" conf="default, compile, runtime(*), master(compile), runtime, default(compile), compile(*), master" position="0">
+				<license name="BSD 3-Clause" url="http://www.scala-lang.org/license.html"/>
+				<metadata-artifact status="no" details="" size="2653" time="0" location="/home/masoud/.ivy2/cache/org.scala-lang/scala-library/ivy-2.12.7.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/scala-lang/scala-library/2.12.7/scala-library-2.12.7.pom"/>
+				<caller organisation="io.circe" name="circe-generic-extras_2.12" conf="default, compile, runtime, master" rev="2.12.7" rev-constraint-default="2.12.7" rev-constraint-dynamic="2.12.7" callerrev="0.10.0"/>
+				<caller organisation="org.scala-lang.modules" name="scala-parser-combinators_2.12" conf="compile, runtime" rev="2.12.7" rev-constraint-default="2.12.7" rev-constraint-dynamic="2.12.7" callerrev="1.1.1"/>
+				<caller organisation="io.spray" name="spray-json_2.12" conf="default, compile, runtime, master" rev="2.12.7" rev-constraint-default="2.12.7" rev-constraint-dynamic="2.12.7" callerrev="1.3.4"/>
+				<caller organisation="org.typelevel" name="cats-core_2.12" conf="default, compile, runtime, master" rev="2.12.7" rev-constraint-default="2.12.7" rev-constraint-dynamic="2.12.7" callerrev="1.1.0"/>
+				<caller organisation="io.circe" name="circe-parser_2.12" conf="default, compile, runtime, master" rev="2.12.7" rev-constraint-default="2.12.7" rev-constraint-dynamic="2.12.7" callerrev="0.10.0"/>
+				<caller organisation="com.typesafe.play" name="play-iteratees_2.11" conf="compile, runtime" rev="2.12.7" rev-constraint-default="2.12.7" rev-constraint-dynamic="2.12.7" callerrev="2.4.6"/>
+				<caller organisation="org.scala-lang.modules" name="scala-java8-compat_2.12" conf="compile, runtime" rev="2.12.7" rev-constraint-default="2.12.7" rev-constraint-dynamic="2.12.7" callerrev="0.8.0"/>
+				<caller organisation="com.typesafe.play" name="play-datacommons_2.11" conf="compile, runtime" rev="2.12.7" rev-constraint-default="2.12.7" rev-constraint-dynamic="2.12.7" callerrev="2.4.6"/>
+				<caller organisation="com.typesafe.akka" name="akka-http-core_2.12" conf="compile, runtime" rev="2.12.7" rev-constraint-default="2.12.7" rev-constraint-dynamic="2.12.7" callerrev="10.1.7"/>
+				<caller organisation="org.scala-stm" name="scala-stm_2.11" conf="compile, runtime" rev="2.12.7" rev-constraint-default="2.12.7" rev-constraint-dynamic="2.12.7" callerrev="0.7"/>
+				<caller organisation="com.typesafe" name="ssl-config-core_2.12" conf="compile, runtime" rev="2.12.7" rev-constraint-default="2.12.7" rev-constraint-dynamic="2.12.7" callerrev="0.3.6"/>
+				<caller organisation="com.typesafe.akka" name="akka-http-spray-json_2.12" conf="default, compile, runtime, master" rev="2.12.7" rev-constraint-default="2.12.7" rev-constraint-dynamic="2.12.7" callerrev="10.1.7"/>
+				<caller organisation="org.typelevel" name="cats-macros_2.12" conf="compile, runtime" rev="2.12.7" rev-constraint-default="2.12.7" rev-constraint-dynamic="2.12.7" callerrev="1.1.0"/>
+				<caller organisation="org.typelevel" name="cats-core_2.12" conf="compile, runtime" rev="2.12.7" rev-constraint-default="2.12.7" rev-constraint-dynamic="2.12.7" callerrev="1.4.0"/>
+				<caller organisation="project1" name="project1_2.12" conf="test, compile, runtime" rev="2.12.7" rev-constraint-default="2.12.7" rev-constraint-dynamic="2.12.7" callerrev="0.1"/>
+				<caller organisation="org.typelevel" name="machinist_2.12" conf="compile, runtime" rev="2.12.7" rev-constraint-default="2.12.7" rev-constraint-dynamic="2.12.7" callerrev="0.6.2"/>
+				<caller organisation="org.typelevel" name="cats-kernel_2.12" conf="compile, runtime" rev="2.12.7" rev-constraint-default="2.12.7" rev-constraint-dynamic="2.12.7" callerrev="1.1.0"/>
+				<caller organisation="org.typelevel" name="cats-macros_2.12" conf="compile, runtime" rev="2.12.7" rev-constraint-default="2.12.7" rev-constraint-dynamic="2.12.7" callerrev="1.4.0"/>
+				<caller organisation="io.circe" name="circe-literal_2.12" conf="default, compile, runtime, master" rev="2.12.7" rev-constraint-default="2.12.7" rev-constraint-dynamic="2.12.7" callerrev="0.10.0"/>
+				<caller organisation="com.typesafe.akka" name="akka-testkit_2.12" conf="default, compile, runtime, master" rev="2.12.7" rev-constraint-default="2.12.7" rev-constraint-dynamic="2.12.7" callerrev="2.5.19"/>
+				<caller organisation="org.typelevel" name="machinist_2.12" conf="compile, runtime" rev="2.12.7" rev-constraint-default="2.12.7" rev-constraint-dynamic="2.12.7" callerrev="0.6.5"/>
+				<caller organisation="ch.megard" name="akka-http-cors_2.12" conf="default, compile, runtime, master" rev="2.12.7" rev-constraint-default="2.12.7" rev-constraint-dynamic="2.12.7" callerrev="0.3.4"/>
+				<caller organisation="org.typelevel" name="cats-kernel_2.12" conf="compile, runtime" rev="2.12.7" rev-constraint-default="2.12.7" rev-constraint-dynamic="2.12.7" callerrev="1.4.0"/>
+				<caller organisation="io.circe" name="circe-jawn_2.12" conf="compile, runtime" rev="2.12.7" rev-constraint-default="2.12.7" rev-constraint-dynamic="2.12.7" callerrev="0.10.0"/>
+				<caller organisation="com.typesafe.akka" name="akka-http_2.12" conf="default, compile, runtime, master" rev="2.12.7" rev-constraint-default="2.12.7" rev-constraint-dynamic="2.12.7" callerrev="10.1.7"/>
+				<caller organisation="com.typesafe.slick" name="slick_2.12" conf="default, compile, runtime, master" rev="2.12.7" rev-constraint-default="2.12.7" rev-constraint-dynamic="2.12.7" callerrev="3.2.3"/>
+				<caller organisation="com.typesafe.slick" name="slick-hikaricp_2.12" conf="default, compile, runtime, master" rev="2.12.7" rev-constraint-default="2.12.7" rev-constraint-dynamic="2.12.7" callerrev="3.2.3"/>
+				<caller organisation="io.circe" name="circe-numbers_2.12" conf="compile, runtime" rev="2.12.7" rev-constraint-default="2.12.7" rev-constraint-dynamic="2.12.7" callerrev="0.10.0"/>
+				<caller organisation="com.typesafe.akka" name="akka-stream_2.12" conf="default, compile, runtime, master" rev="2.12.7" rev-constraint-default="2.12.7" rev-constraint-dynamic="2.12.7" callerrev="2.5.19"/>
+				<caller organisation="com.typesafe.akka" name="akka-protobuf_2.12" conf="compile, runtime" rev="2.12.7" rev-constraint-default="2.12.7" rev-constraint-dynamic="2.12.7" callerrev="2.5.19"/>
+				<caller organisation="io.circe" name="circe-core_2.12" conf="default, compile, runtime, master" rev="2.12.7" rev-constraint-default="2.12.7" rev-constraint-dynamic="2.12.7" callerrev="0.10.0"/>
+				<caller organisation="com.typesafe.akka" name="akka-actor_2.12" conf="default, compile, runtime, master" rev="2.12.7" rev-constraint-default="2.12.7" rev-constraint-dynamic="2.12.7" callerrev="2.5.19"/>
+				<caller organisation="com.typesafe.play" name="play-json_2.11" conf="default, compile, runtime, master" rev="2.12.7" rev-constraint-default="2.12.7" rev-constraint-dynamic="2.12.7" callerrev="2.4.6"/>
+				<caller organisation="com.typesafe.akka" name="akka-stream-testkit_2.12" conf="default, compile, runtime, master" rev="2.12.7" rev-constraint-default="2.12.7" rev-constraint-dynamic="2.12.7" callerrev="2.5.19"/>
+				<caller organisation="io.circe" name="circe-generic_2.12" conf="default, compile, runtime, master" rev="2.12.7" rev-constraint-default="2.12.7" rev-constraint-dynamic="2.12.7" callerrev="0.10.0"/>
+				<caller organisation="io.spray" name="spray-json_2.12" conf="compile, runtime" rev="2.12.7" rev-constraint-default="2.12.7" rev-constraint-dynamic="2.12.7" callerrev="1.3.5"/>
+				<caller organisation="com.typesafe.akka" name="akka-parsing_2.12" conf="compile, runtime" rev="2.12.7" rev-constraint-default="2.12.7" rev-constraint-dynamic="2.12.7" callerrev="10.1.7"/>
+				<caller organisation="com.chuusai" name="shapeless_2.12" conf="compile, runtime" rev="2.12.7" rev-constraint-default="2.12.7" rev-constraint-dynamic="2.12.7" callerrev="2.3.3"/>
+				<caller organisation="org.spire-math" name="jawn-parser_2.12" conf="compile, runtime" rev="2.12.7" rev-constraint-default="2.12.7" rev-constraint-dynamic="2.12.7" callerrev="0.13.0"/>
+				<caller organisation="org.scala-lang" name="scala-reflect" conf="compile, runtime" rev="2.12.7" rev-constraint-default="2.12.7" rev-constraint-dynamic="2.12.7" callerrev="2.12.7"/>
+				<caller organisation="org.typelevel" name="macro-compat_2.12" conf="compile, runtime" rev="2.12.7" rev-constraint-default="2.12.7" rev-constraint-dynamic="2.12.7" callerrev="1.1.1"/>
+				<caller organisation="com.typesafe.play" name="play-functional_2.11" conf="compile, runtime" rev="2.12.7" rev-constraint-default="2.12.7" rev-constraint-dynamic="2.12.7" callerrev="2.4.6"/>
+				<caller organisation="com.typesafe.slick" name="slick-codegen_2.12" conf="default, compile, runtime, master" rev="2.12.7" rev-constraint-default="2.12.7" rev-constraint-dynamic="2.12.7" callerrev="3.2.3"/>
+				<artifacts>
+					<artifact name="scala-library" type="jar" ext="jar" status="no" details="" size="5277511" time="0" location="/home/masoud/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.12.7.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/scala-lang/scala-library/2.12.7/scala-library-2.12.7.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+	</dependencies>
+</ivy-report>
